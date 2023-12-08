@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.40208bcc.css",
+    "main.js": "./static/js/main.2fd999c8.js",
+    "static/js/787.d4aba7ab.chunk.js": "./static/js/787.d4aba7ab.chunk.js",
+    "static/media/avatar_1.png": "./static/media/avatar_1.ec6af7ef949936f24d16.png",
+    "static/media/laptop.png": "./static/media/laptop.469e17185c9dcab178aa.png",
+    "static/media/new_img.png": "./static/media/new_img.453e8efaca1df2170e53.png",
+    "static/media/Mont-Book.otf": "./static/media/Mont-Book.9b0380a1d3d49770db78.otf",
+    "static/media/avatar_2.png": "./static/media/avatar_2.90d2282f4858914aae46.png",
+    "static/media/logo.svg": "./static/media/logo.6f9bf7908bd4018c9b52af4adc50db94.svg",
+    "index.html": "./index.html",
+    "main.40208bcc.css.map": "./static/css/main.40208bcc.css.map",
+    "main.2fd999c8.js.map": "./static/js/main.2fd999c8.js.map",
+    "787.d4aba7ab.chunk.js.map": "./static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40208bcc.css",
+    "static/js/main.2fd999c8.js"
+  ]
+}
