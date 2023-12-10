@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.a12e402d.css",
-    "main.js": "./static/js/main.044699f9.js",
+    "main.css": "./static/css/main.56fd1864.css",
+    "main.js": "./static/js/main.ee10605e.js",
     "static/js/787.d4aba7ab.chunk.js": "./static/js/787.d4aba7ab.chunk.js",
     "static/media/avatar_1.png": "./static/media/avatar_1.ec6af7ef949936f24d16.png",
     "static/media/montserrat-medium.otf": "./static/media/montserrat-medium.806e801c7667b65d8a3c.otf",
@@ -71,25 +71,26 @@
     "static/media/TestDomaineText-Black.woff": "./static/media/TestDomaineText-Black.660dd7b7f4adb13334a2.woff",
     "static/media/TestDomaineText-Medium.woff": "./static/media/TestDomaineText-Medium.7a157daee1b3c4fb7d85.woff",
     "static/media/TestDomaineText-Light.woff": "./static/media/TestDomaineText-Light.0a5bef26c69ec18d5370.woff",
-    "static/media/TestDomaineText-Bold.woff": "./static/media/TestDomaineText-Bold.2ecd343d51a3e1a14c4e.woff",
     "static/media/TestDomaineText-Regular.woff": "./static/media/TestDomaineText-Regular.d694527bd8251cf1dda1.woff",
+    "static/media/test-domaine-text-black.woff2": "./static/media/test-domaine-text-black.92ac059efe5e4d9b7971.woff2",
+    "static/media/test-domaine-text-bold.woff2": "./static/media/test-domaine-text-bold.a851fae9608b050a57ce.woff2",
     "static/media/TestDomaineText-MediumItalic.woff2": "./static/media/TestDomaineText-MediumItalic.08eb558e4b1241519d1d.woff2",
     "static/media/TestDomaineText-RegularItalic.woff2": "./static/media/TestDomaineText-RegularItalic.e8748581b0e119a05c73.woff2",
     "static/media/TestDomaineText-BoldItalic.woff2": "./static/media/TestDomaineText-BoldItalic.028a8a64dd5d22eadbd7.woff2",
     "static/media/TestDomaineText-BlackItalic.woff2": "./static/media/TestDomaineText-BlackItalic.e54f58d9326898cc6f68.woff2",
     "static/media/TestDomaineText-LightItalic.woff2": "./static/media/TestDomaineText-LightItalic.ed97ae61a9f22e431ed2.woff2",
     "static/media/TestDomaineText-Medium.woff2": "./static/media/TestDomaineText-Medium.135bf90b3a93b0bcf00e.woff2",
-    "static/media/TestDomaineText-Bold.woff2": "./static/media/TestDomaineText-Bold.2f0c9b541cc72a64020f.woff2",
     "static/media/TestDomaineText-Regular.woff2": "./static/media/TestDomaineText-Regular.e8f9285293a94dd9694d.woff2",
     "static/media/TestDomaineText-Black.woff2": "./static/media/TestDomaineText-Black.e10c560b9a08965db1da.woff2",
     "static/media/TestDomaineText-Light.woff2": "./static/media/TestDomaineText-Light.523a2169096c9abdd74c.woff2",
     "index.html": "./index.html",
-    "main.a12e402d.css.map": "./static/css/main.a12e402d.css.map",
-    "main.044699f9.js.map": "./static/js/main.044699f9.js.map",
+    "static/media/close-button-icon.svg": "./static/media/close-button-icon.b81ef0f9838b89e66ee1.svg",
+    "main.56fd1864.css.map": "./static/css/main.56fd1864.css.map",
+    "main.ee10605e.js.map": "./static/js/main.ee10605e.js.map",
     "787.d4aba7ab.chunk.js.map": "./static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a12e402d.css",
-    "static/js/main.044699f9.js"
+    "static/css/main.56fd1864.css",
+    "static/js/main.ee10605e.js"
   ]
 }
