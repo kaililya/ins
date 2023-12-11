@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.56fd1864.css",
-    "main.js": "./static/js/main.ee10605e.js",
+    "main.css": "./static/css/main.3b35e2c8.css",
+    "main.js": "./static/js/main.c2451a65.js",
     "static/js/787.d4aba7ab.chunk.js": "./static/js/787.d4aba7ab.chunk.js",
+    "static/media/articles-02.jpg": "./static/media/articles-02.6b7d9788d8d9b7ca7d1d.jpg",
+    "static/media/articles-01.jpg": "./static/media/articles-01.de594199169eac868ccb.jpg",
     "static/media/avatar_1.png": "./static/media/avatar_1.ec6af7ef949936f24d16.png",
     "static/media/montserrat-medium.otf": "./static/media/montserrat-medium.806e801c7667b65d8a3c.otf",
+    "static/media/blog_image.png": "./static/media/blog_image.487cfab67b60db891ee5.png",
     "static/media/laptop.png": "./static/media/laptop.469e17185c9dcab178aa.png",
     "static/media/new_img.png": "./static/media/new_img.453e8efaca1df2170e53.png",
+    "static/media/articles-03.jpg": "./static/media/articles-03.e9347156e7d81678e599.jpg",
     "static/media/Mont-HeavyItalic.otf": "./static/media/Mont-HeavyItalic.5456ab3c64f6731a6eac.otf",
     "static/media/Mont-BoldItalic.otf": "./static/media/Mont-BoldItalic.b71065cbbba2a26ef690.otf",
     "static/media/Mont-ExtraLightItalic.otf": "./static/media/Mont-ExtraLightItalic.3ef26193c3a7f2760016.otf",
@@ -85,12 +89,12 @@
     "static/media/TestDomaineText-Light.woff2": "./static/media/TestDomaineText-Light.523a2169096c9abdd74c.woff2",
     "index.html": "./index.html",
     "static/media/close-button-icon.svg": "./static/media/close-button-icon.b81ef0f9838b89e66ee1.svg",
-    "main.56fd1864.css.map": "./static/css/main.56fd1864.css.map",
-    "main.ee10605e.js.map": "./static/js/main.ee10605e.js.map",
+    "main.3b35e2c8.css.map": "./static/css/main.3b35e2c8.css.map",
+    "main.c2451a65.js.map": "./static/js/main.c2451a65.js.map",
     "787.d4aba7ab.chunk.js.map": "./static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56fd1864.css",
-    "static/js/main.ee10605e.js"
+    "static/css/main.3b35e2c8.css",
+    "static/js/main.c2451a65.js"
   ]
 }
