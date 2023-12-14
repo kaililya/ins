@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ins/static/css/main.5b3fdb76.css",
-    "main.js": "/ins/static/js/main.9a812d47.js",
+    "main.css": "/ins/static/css/main.cd21f9b4.css",
+    "main.js": "/ins/static/js/main.66a5fefd.js",
     "static/js/787.d4aba7ab.chunk.js": "/ins/static/js/787.d4aba7ab.chunk.js",
     "static/media/articles-02.jpg": "/ins/static/media/articles-02.6b7d9788d8d9b7ca7d1d.jpg",
     "static/media/articles-01.jpg": "/ins/static/media/articles-01.de594199169eac868ccb.jpg",
@@ -10,6 +10,7 @@
     "static/media/blog_image.png": "/ins/static/media/blog_image.487cfab67b60db891ee5.png",
     "static/media/laptop.png": "/ins/static/media/laptop.469e17185c9dcab178aa.png",
     "static/media/new_img.png": "/ins/static/media/new_img.453e8efaca1df2170e53.png",
+    "static/media/laptop_new_2.png": "/ins/static/media/laptop_new_2.64f4480ba3b6e660018b.png",
     "static/media/articles-03.jpg": "/ins/static/media/articles-03.e9347156e7d81678e599.jpg",
     "static/media/Mont-HeavyItalic.otf": "/ins/static/media/Mont-HeavyItalic.5456ab3c64f6731a6eac.otf",
     "static/media/Mont-BoldItalic.otf": "/ins/static/media/Mont-BoldItalic.b71065cbbba2a26ef690.otf",
@@ -47,6 +48,7 @@
     "static/media/TTInterfaces-ExtraBold.woff": "/ins/static/media/TTInterfaces-ExtraBold.eec5423ffcbc8e616e48.woff",
     "static/media/TTInterfaces-Bold.woff": "/ins/static/media/TTInterfaces-Bold.2e220fcacd92fb9aa1e4.woff",
     "static/media/avatar_2.png": "/ins/static/media/avatar_2.90d2282f4858914aae46.png",
+    "static/media/404-page.svg": "/ins/static/media/404-page.ec54d957301e273d75332a5dfc777313.svg",
     "static/media/MontRegular.woff": "/ins/static/media/MontRegular.5f2dd0890a78d28216de.woff",
     "static/media/GeometriaRegular.woff": "/ins/static/media/GeometriaRegular.8a7c9bf6c4fb69e13595.woff",
     "static/media/TTInterfaces-ExtraLightItalic.woff2": "/ins/static/media/TTInterfaces-ExtraLightItalic.f1256ffb704e241493ca.woff2",
@@ -89,12 +91,12 @@
     "static/media/TestDomaineText-Light.woff2": "/ins/static/media/TestDomaineText-Light.523a2169096c9abdd74c.woff2",
     "index.html": "/ins/index.html",
     "static/media/close-button-icon.svg": "/ins/static/media/close-button-icon.b81ef0f9838b89e66ee1.svg",
-    "main.5b3fdb76.css.map": "/ins/static/css/main.5b3fdb76.css.map",
-    "main.9a812d47.js.map": "/ins/static/js/main.9a812d47.js.map",
+    "main.cd21f9b4.css.map": "/ins/static/css/main.cd21f9b4.css.map",
+    "main.66a5fefd.js.map": "/ins/static/js/main.66a5fefd.js.map",
     "787.d4aba7ab.chunk.js.map": "/ins/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b3fdb76.css",
-    "static/js/main.9a812d47.js"
+    "static/css/main.cd21f9b4.css",
+    "static/js/main.66a5fefd.js"
   ]
 }
