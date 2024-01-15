@@ -5,6 +5,7 @@ import logo from '../../image/compleon-solutions-logo.png'
 import { IoIosArrowDown } from 'react-icons/io';
 
 import logoFooter from '../../image/compleon-solutions-logo-footer_mobile.png'
+import { articlesPATH, beratungPATH, datenschutzPATH, faqPATH, funktionenPATH, impressumPATH, kontaktPATH, prozessPATH, unternehmenPATH, wikiPATH } from '../../utils/constants';
 
 function Footer() {
 
@@ -15,28 +16,28 @@ function Footer() {
     <footer className={styles.footer}>
       <ul className={styles.links_container}>
         <li className={styles.links_container_columns}>
-          <NavLink className={switchClassNameMainLink} href="#">
-            Compleon 
+          <NavLink className={switchClassNameMainLink} href="">
+            Compleon
             <IoIosArrowDown className={styles.icon} />
           </NavLink>
           <ul className={styles.link_column}>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to =''>
-                Demo ansehen
-              </NavLink>
+             <a className={styles.link_minor} rel="noopener noreferrer" target="_blank" href="http://demo.compelon-solutions.de/">
+                Demo
+              </a>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <a className={styles.link_minor} rel="noopener noreferrer" target="_blank" href="https://app.compleon-solutions.de/user/login">
                 Login
-              </NavLink>
+              </a>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={kontaktPATH}>
                 Registrierung
               </NavLink>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={funktionenPATH}>
                 Preise
               </NavLink>
             </li>
@@ -50,12 +51,12 @@ function Footer() {
           </NavLink>
           <ul className={styles.link_column}>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={prozessPATH}>
                 Prozess
               </NavLink>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={beratungPATH}>
                 Beratung
               </NavLink>
             </li>
@@ -69,17 +70,17 @@ function Footer() {
           </NavLink>
           <ul className={styles.link_column}>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
-              Fachartikel
+              <NavLink className={switchClassNameMinorLink} to={articlesPATH}>
+                Fachartikel
               </NavLink>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
-              FAQ
+              <NavLink className={switchClassNameMinorLink} to={faqPATH}>
+                FAQ
               </NavLink>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={wikiPATH}>
                 Wiki
               </NavLink>
             </li>
@@ -88,27 +89,27 @@ function Footer() {
 
         <li className={styles.links_container_columns}>
           <NavLink className={switchClassNameMainLink} href="#">
-            Über uns
+               Über uns
             <IoIosArrowDown className={styles.icon} />
           </NavLink>
           <ul className={styles.link_column}>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={kontaktPATH}>
                 Kontakt
               </NavLink>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={unternehmenPATH}>
                 Unternehmen
               </NavLink>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={impressumPATH}>
                 Impressum
               </NavLink>
             </li>
             <li className={styles.link}>
-              <NavLink className={switchClassNameMinorLink} to=''>
+              <NavLink className={switchClassNameMinorLink} to={datenschutzPATH}>
                 Datenschutz
               </NavLink>
             </li>
@@ -116,14 +117,141 @@ function Footer() {
         </li>
       </ul>
 
+
+      <ul className={styles.accordion}>
+        <li className={styles.accordion_item}>
+          <input
+            className={styles.accordion_trigger}
+            type="checkbox"
+            name="accordion"
+            id="footer1"
+          />
+          <label className={styles.accordion_label} htmlFor="footer1">
+            Compleon
+          </label>
+          <div className={styles.accordion_content}>
+            <ul className={styles.link_column}>
+              <li className={styles.link}>
+                <a className={styles.link_minor} rel="noopener noreferrer" target="_blank" href="http://demo.compelon-solutions.de/">
+                  Demo
+                </a>
+              </li>
+              <li className={styles.link}>
+                <a className={styles.link_minor} rel="noopener noreferrer" target="_blank" href="https://app.compleon-solutions.de/user/login">
+                  Login
+                </a>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to="">
+                  Registrierung
+                </NavLink>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={funktionenPATH}>
+                  Preise
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li className={styles.accordion_item}>
+          <input
+            className={styles.accordion_trigger}
+            type="checkbox"
+            name="accordion"
+            id="footer2"
+          />
+          <label className={styles.accordion_label} htmlFor="footer2">
+            Service
+          </label>
+          <div className={styles.accordion_content}>
+            <ul className={styles.link_column}>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={prozessPATH}>
+                  Prozess
+                </NavLink>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={beratungPATH}>
+                  Beratung
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li className={styles.accordion_item}>
+          <input
+            className={styles.accordion_trigger}
+            type="checkbox"
+            name="accordion"
+            id="footer3"
+          />
+          <label className={styles.accordion_label} htmlFor="footer3">
+            Aktuelles
+          </label>
+          <div className={styles.accordion_content}>
+            <ul className={styles.link_column}>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={articlesPATH}>
+                  Fachartikel
+                </NavLink>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={faqPATH}>
+                  FAQ
+                </NavLink>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={wikiPATH}>
+                  Wiki
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li className={styles.accordion_item}>
+          <input
+            className={styles.accordion_trigger}
+            type="checkbox"
+            name="accordion"
+            id="footer4"
+          />
+          <label className={styles.accordion_label} htmlFor="footer4">
+            Über uns
+          </label>
+          <div className={styles.accordion_content}>
+            <ul className={styles.link_column}>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={kontaktPATH}>
+                  Kontakt
+                </NavLink>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={unternehmenPATH}>
+                  Unternehmen
+                </NavLink>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={impressumPATH}>
+                  Impressum
+                </NavLink>
+              </li>
+              <li className={styles.link}>
+                <NavLink className={switchClassNameMinorLink} to={datenschutzPATH}>
+                  Datenschutz
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
       <div className={styles.logo_copyright_container}>
-        <img className={styles.logo} src={logo} alt="" />
-        <img className={styles.logo__mobile} src={logoFooter} alt="" />
+        <img className={styles.logo} src={logo} alt="logo" />
+        <img className={styles.logo__mobile} src={logoFooter} alt="logo" />
         <p className={styles.copyright}>2023. Alle Rechte vorbehalten.</p>
       </div>
-
     </footer>
-  )
+  );
 }
 
 export default Footer

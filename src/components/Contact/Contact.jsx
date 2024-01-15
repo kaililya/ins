@@ -19,26 +19,30 @@ function Contact() {
       <ul className={styles.contact_container}>
         <li className={styles.contact_item}>
           <div className={styles.image_wrapper}>
-            <img className={styles.image} src={avatarFirst} alt="" />
+            <img className={styles.image} src={avatarFirst} alt="avatar" />
           </div>
           <h3 className={styles.contact_item_title}>Thomas Schwan</h3>
         </li>
         <li className={styles.contact_item}>
           <div className={styles.image_wrapper}>
-            <img className={styles.image} src={avatarSecond} alt="" />
+            <img className={styles.image} src={avatarSecond} alt="avatar" />
           </div>
           <h3 className={styles.contact_item_title}>Michael Gunkel</h3>
         </li>
       </ul>
       <ul className={styles.button_container}>
         <li className={styles.button}>
-          Factsheet holen (PDF)
+            Factsheet holen (PDF)
         </li>
         <li className={styles.button}>
-          T. 030 93 029 819 16
+          <a href='tel:0309302981916' className={styles.link}>
+            T. 030 93 029 819 16
+          </a>
         </li>
         <li className={styles.button}>
-          Mail schreiben
+         <a href="mailto:contact@compleon-solutions.de" className={styles.link}>
+            Mail schreiben
+          </a>
         </li>
       </ul>
     </section>

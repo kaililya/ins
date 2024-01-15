@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
+import { NavLink } from "react-router-dom";
+import { prozessPATH } from "../../utils/constants";
 
 function Process() {
   return (
@@ -131,8 +133,12 @@ function Process() {
 
     </Swiper>
     <ul className={styles.button_container}>
-      <li className={styles.button_container_item}>Prozess im Detail (PDF)</li>
-      <li className={styles.button_container_item}>Service-Leistungen</li>
+      <li className={styles.button_container_item}>
+        <NavLink to={prozessPATH} className={styles.link}>
+          Service-Leistungen
+        </NavLink>
+      </li>
+        
     </ul>
   </section>);
 }

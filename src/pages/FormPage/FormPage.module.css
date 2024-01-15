@@ -1,0 +1,101 @@
+.main_container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 16px;
+}
+
+.title {
+  color: #282882;
+  text-align: center;
+  font-family: TestDomaineText;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 116.667%;
+  font-size: calc((100vw - 414px)/(1920 - 414) * (60 - 20) + 32px);
+  margin-bottom: calc((100vw - 414px)/(1920 - 414) * (81 - 43) + 43px);
+  margin-top: calc((100vw - 414px)/(1920 - 414) * (81 - 34) + 34px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.input {
+  border-radius: 33px;
+  border: 1px solid #282882;
+  background: #FFF;
+  padding: 8px 0;
+  padding-left: 37px;
+  padding-right: 13px;
+  box-sizing: border-box;
+  height: 49px;
+  display: block;
+  width: 100%;
+  max-width: 625px;
+  box-sizing: border-box;
+  position: relative;
+  color: #282882;
+  font-family: Mont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.input__textarea {
+  max-height: 186px;
+  height: auto;
+  border-radius: 16px;
+
+}
+
+.input::placeholder {
+  color: #282882;
+  font-family: Mont;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button_contact {
+  font-family: Mont;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 145%;
+  display: flex;
+  width: calc((100vw - 320px)/(1920 - 320) * (290 - 174) + 174px);
+  height: 75px;
+  padding: 12px 25px 11.19px 25px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 46px;
+  border: 0;
+  color: white;
+  background: #EC5E43;  
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+  margin-top: calc((100vw - 320px)/(1920 - 320) * (52 - 31) + 31px);
+  margin-bottom: 26px;
+}
+
+.button_contact:hover {
+  background-color: #292982;
+}
+
+.request_meassage {
+  color: #EC5E43;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 186.429%;
+  text-align: center;
+  margin-bottom: 66px;
+
+}

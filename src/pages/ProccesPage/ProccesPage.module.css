@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0 auto;
   padding-bottom: calc((100vw - 320px)/(1920 - 320) * (104 - 50) + 50px);
+  padding-top: calc((100vw - 320px)/(1920 - 320) * (35 - 30) + 30px);
 }
 
 .background {
@@ -164,10 +165,20 @@
   color:  #fff;
 }
 
+.link {
+  text-decoration: none;
+  color: #EC5E43;
+}
+
+.button_container_item:hover .link {
+  color: white;
+}
+
 .wrapper {
   width: calc((100vw - 320px)/(1920 - 320) * (600 - 300) + 300px);
   display: none !important;
 }
+
 
 
 @media (max-width: 1024px) {

@@ -1,7 +1,6 @@
 .main_container {
   padding-top: calc((100vw - 320px)/(1920 - 414) * (69 - 27) + 27px);
   padding-bottom: calc((100vw - 320px)/(1920 - 414) * (96 - 59) + 59px);
-
 }
 
 .direction_container {

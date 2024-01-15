@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Hello from "../../components/Hello/Hello";
 import Function from "../../components/Function/Function";
 import Process from "../../components/Process/Process";
@@ -9,18 +9,22 @@ import News from "../../components/News/News";
 import Contact from "../../components/Contact/Contact";
 
 function MainPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
   return (
-    <div>
+    <main>
       <Hello />
       <Function />
       <Input isSubTitle={true} />
-
       <Process />
       <Price  />
       <PriceTarif />
       <News /> 
       <Contact />
-    </div>
+    </main>
   )
 }
 

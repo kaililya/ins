@@ -191,8 +191,16 @@
 @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
-	src: url("./fonts/TestDomaineText-Bold.woff2") format("woff2"), url("./fonts/TestDomaineText-Bold.woff") format("woff");
+	src: url("./fonts/test-domaine-text-bold.woff2") format("woff2");
 	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: TestDomaineText;
+	font-display: swap;
+	src: url("./fonts/test-domaine-text-black.woff2") format("woff2");
+	font-weight: 900;
 	font-style: normal;
 }
 @font-face {

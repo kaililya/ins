@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from './FirmPage.module.css'
 import targetIcon from '../../image/target-icon.png'
 import consultingIcon from '../../image/consulting-icon.png'
@@ -6,6 +6,9 @@ import devopsIcon from '../../image/devops-icon.png'
 
 
 function FirmPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
   return (
     <section className={styles.main_container}>
       <div className={styles.direction_container}>

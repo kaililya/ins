@@ -122,6 +122,16 @@
   color:  #fff;
 }
 
+.link {
+  text-decoration: none;
+  color: #4E4E4E;
+}
+
+.button:hover .link {
+  color:  #fff;
+
+}
+
 @media (max-width: 990px) {
   .button_container {
     flex-direction: column;

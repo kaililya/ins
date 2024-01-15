@@ -7,5 +7,10 @@
 .function_container {
   margin-top: 50px;
   padding-bottom: 50px;
-  
+}
+
+.function_slider_wrapper {
+  margin-bottom: 30px;
+  /* padding-bottom: 20px; */
+  /* background-color: aqua; */
 }

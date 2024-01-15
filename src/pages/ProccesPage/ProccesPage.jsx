@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from './ProccesPage.module.css'
+import { NavLink } from "react-router-dom";
 
 function ProccesPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
   return (  
     <>
    <div className={styles.background}>
@@ -67,8 +73,11 @@ function ProccesPage() {
       </li>
      </ul>
      <ul className={styles.button_container}>
-      <li className={styles.button_container_item}>Prozess im Detail (PDF)</li>
-      <li className={styles.button_container_item}>Service-Leistungen</li>
+      <li className={styles.button_container_item}>
+        <NavLink to={''} className={styles.link}>
+        Service-Leistungen
+        </NavLink>
+      </li>
     </ul>
     </section>
     </>

@@ -17,6 +17,7 @@
   line-height: 145%;
   text-transform: uppercase;
   margin-bottom: 6px;
+  margin-top: 50px;
 }
 
 .title {
@@ -78,7 +79,7 @@
   font-size: 62px;
   font-style: normal;
   font-weight: 400;
-  line-height: 98px; /* 158.065% */
+  line-height: 158.065%;
   width: 116px;
   height: 116px;
   border-radius: 50%;
@@ -95,9 +96,11 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 27.3px; /* 113.75% */
+  line-height: 113.75%;
   text-transform: uppercase;
   text-align: center;
+  margin-top: calc((100vw - 414px)/(1920 - 414) * (45 - 25) + 25px);
+  margin-bottom: calc((100vw - 414px)/(1920 - 414) * (32 - 25) + 25px);
 }
 
 .process_item_sub_title {
@@ -115,7 +118,7 @@
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: calc((100vw - 320px)/(1920 - 320) * (60 - 30) + 30px);
+  margin-top: calc((100vw - 414px)/(1920 - 414) * (60 - 30) + 30px);
   gap: 29px;
   list-style: none;
 }
@@ -138,9 +141,19 @@
   transition: all .2s ease-out;
 }
 
+.link {
+  text-decoration: none;
+  color: #EC5E43
+}
+
 .button_container_item:hover {
   background: #EC5E43;
   color:  #fff;
+}
+
+.button_container_item:hover .link {
+  color:  #fff;
+
 }
 
 .wrapper {

@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from './Price.module.css'
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { fetchGetPriceThunk } from "../../services/thunks/swagger-thunk";
 
 
 function Price() {
+
+  const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   dispatch(fetchGetPriceThunk());
+  // },[])
+ 
   return (
     <section className={styles.main_container}>
       <p className={styles.spoiler}>

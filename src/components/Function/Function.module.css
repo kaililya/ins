@@ -16,7 +16,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26.1px; /* 145% */
+  line-height:  145%;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 6px;
@@ -70,11 +70,11 @@
   transition: box-shadow .3s ease, outline .001s;
   display: flex; 
   flex-direction: column;
-  flex: 0 1 32%;
-  max-width: 342px;
+  flex: 0 0 32%;
+  /* max-width: 342px; */
   justify-content: center;
   align-items: center;
-  padding: 35px 41px 53px;
+  padding: 35px 8px 53px;
   box-sizing: border-box;
 }
 
@@ -103,12 +103,15 @@
 }
 
 .function_item_title {
+  flex: 1;
+  display: flex;
+  align-items: center;
   color: #282882;
   font-family: TestDomaineText;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
   letter-spacing: 0.24px;
   text-align: center;
   margin: 0 0 43px;
@@ -116,7 +119,6 @@
 }
 
 .function_item_sub_title {
-  flex: 1;
   color: #4E4E4E;
   text-align: center;
   font-family: Mont;
@@ -147,6 +149,7 @@
   cursor: pointer;
   margin: 0 auto;
   margin-top: calc((100vw - 320px)/(1920 - 320) * (60 - 50) + 50px);
+  text-decoration: none;
 }
 
 .button:hover {
@@ -178,14 +181,18 @@
 
  .wrapper div {
   margin: 0 auto;
+
  }
 
  .wrapper {
   outline: 2px solid #BEBEDA;
   border-radius: 20px;
+
  }
+
  .wrapper:hover {
   box-shadow: 0px 4px 41px 0px rgba(236, 94, 67, 0.15);
 
  }
+
 }

@@ -1,23 +1,20 @@
-import React from "react";
-import Function from "../../components/Function/Function";
+import React, { useEffect } from "react";
 import styles from "../../components/Function/Function.module.css";
 import styles2 from "./FunctionPage.module.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css/pagination";
-import "swiper/css";
-import networkIcon from "../../image/network-icon.png";
-import relatioshipIcon from "../../image/relationship-icon.png";
-import warningIcon from "../../image/warning-in-curcle-icon.png";
 import Price from "../../components/Price/Price";
 import PriceTarif from "../../components/PriceTarif/PriceTarif";
 import Input from "../../components/Input/Input";
+import FunctionSlider from "../../components/FunctionSlider/FunctionSlider";
 
 function FunctionPage() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+  
   return (
     <>
       <div className={styles2.background}>
-        <p className={styles.spoiler}>Funktionen</p>
         <h2 className={styles.title}>Mehr als Excel – software as a service</h2>
         <p className={styles.sub_title}>
           Mit Compleon Solutions steuern Sie die Rechtspflichten, Maßnahmen und
@@ -26,7 +23,7 @@ function FunctionPage() {
           jederzeit und von überall.
         </p>
       </div>
-      <ul className={`${styles.function_container} ${styles2.function_container}`}>
+      {/* <ul className={`${styles.function_container} ${styles2.function_container}`}>
         <li className={styles.function_item}>
           <img
             className={styles.function_item_image}
@@ -144,8 +141,10 @@ function FunctionPage() {
           </li>
         </SwiperSlide>
       </Swiper>
+      </div> */}
+      <div className={styles2.function_slider_wrapper}>
+        <FunctionSlider />
       </div>
-      
       <Input isSubTitle={false} />
       <Price />
       <PriceTarif />

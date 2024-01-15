@@ -1,0 +1,9 @@
+.main_container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.image {
+  width: calc((100vw - 320px)/(1920 - 320) * (695 - 320) + 320px);
+}
