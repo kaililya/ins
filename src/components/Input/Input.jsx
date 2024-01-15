@@ -44,14 +44,10 @@ function Input({ isSubTitle }) {
 
   return (
     <section className={styles.main_container}>
-      <h2 className={styles.title}>In 4 Schritten rechts­sicher agieren</h2>
+      <h2 className={styles.title}>Ihre Normen in unserem Kataster</h2>
       {isSubTitle && (
         <p className={styles.sub_title}>
-          Ihr Unter­nehmen ist so indivi­duell wie die Arbeitswelt. Deshalb
-          erhalten Sie mehr als eine Software: Wir begleiten Sie von Anfang an
-          beim Aufbau eines indivi­du­ellen Rechts­ka­tasters. Sie arbeiten mit
-          einer umfang­reichen Datenbank und erledigen Ihre Compliance-Audits.
-          Auch gern mit unserer Hilfe.
+          Unser Normenticker hält Sie über die Änderungen zu den wichtigsten Normen auf dem Laufenden. Auf Wunsch können auch spezifische Normen integriert werden - Sprechen Sie uns an!
         </p>
       )}
 

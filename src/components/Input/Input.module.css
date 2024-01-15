@@ -13,15 +13,12 @@
 
 .title {
   color: #282882;
-  font-family: Test Domaine Text;
-  font-size: 55px;
+  font-family: "TestDomaineText";
   font-style: normal;
   font-size: calc((100vw - 320px)/(1920 - 320) * (55 - 32) + 32px);
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 120%; 
   max-width: 440px;
-  text-align: center;
   margin: 0 auto;
   margin-bottom: calc((100vw - 320px)/(1920 - 320) * (39 - 20) + 20px);
   text-align: center;
@@ -30,9 +27,11 @@
 .sub_title {
   color: #4E4E4E;
   font-family: Mont;
+  color: #4E4E4E;
+  font-weight: 600;
   font-size: calc((100vw - 320px)/(1920 - 320) * (18 - 12) + 12px);
   font-style: normal;
-  font-weight: 200;
+  font-weight: 500;
   line-height: 26.1px; 
   margin: 22px 0 70px;
   margin: 0 auto;

@@ -76,8 +76,8 @@ export const fetchLaws = (searchText, pageNumber, pageSize) => async(dispatch) =
   try {
     const accessToken = await getAccessToken();
     dispatch(getLawsRequest());
-    console.log(searchText);
-    const response = await axios.get(`${API_BASE_URL}/api/laws?filter[searchText]=${encodeURIComponent(searchText)}`, {
+    console.log(searchText)
+    const response = await axios.get(`${API_BASE_URL}/api/laws?filter[searchText]=${encodeURIComponent(searchText)}&filter[shortName]=${encodeURIComponent(searchText)}`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${accessToken}`,
