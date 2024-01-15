@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchGetPriceThunk } from "../../services/thunks/swagger-thunk";
 import { TailSpin } from "react-loader-spinner";
 import { BiSolidError } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 
 function PriceTarif() {
   const dispatch = useDispatch();
@@ -172,13 +173,22 @@ function PriceTarif() {
                 </>
               )}
             </p>
-            {console.log(item.attributes.ButtonPrice.link)}
-            <a 
-              className={styles.button}
-              href={item.attributes.ButtonPrice.link}
-              target="_blank"
-            >{item.attributes.ButtonPrice.Title}
+            {console.log(item.attributes.ButtonPrice)}
+            {!item.attributes.ButtonPrice.isExternal ? (
+             <a 
+               className={styles.button}
+               href={item.attributes.ButtonPrice.link}
+               target="_blank"
+             >
+              {item.attributes.ButtonPrice.Title}
             </a>
+            ) : (
+              <NavLink
+               className={styles.button}
+               to={item.attributes.ButtonPrice.link} >
+              </NavLink>
+            )}
+           
             <p className={styles.button__subtitle}>
               {item.attributes.ButtonSubtitle === 'kostenfrei' ? (
                 <></>
