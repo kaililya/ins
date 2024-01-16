@@ -266,3 +266,16 @@
   gap: 12px;
 }
 
+@media (max-width: 400px) {
+  .input::placeholder {
+    font-size: calc((100vw - 320px)/(400 - 320) * (14 - 8) + 8px);
+
+  }
+
+  .input {
+   padding-left: 18px;
+   padding-right: 160px;
+  }
+}
+
+

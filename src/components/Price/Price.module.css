@@ -26,9 +26,10 @@
   font-size: calc((100vw - 320px)/(1920 - 320) * (60 - 32) + 32px);
   font-style: normal;
   font-weight: 700;
-  line-height: 218.75%;
+  line-height: 118.75%;
   font-family: TestDomaineText;
   margin: 0;
+  margin-bottom: calc((100vw - 320px)/(1920 - 320) * (40 - 20) + 20px);
 }
 
 .sub_title {

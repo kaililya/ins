@@ -1,5 +1,4 @@
-/* fonts.css */
-/* Код для подключения шрифта в /css/stylename.css */
+
 @font-face { 
   font-family: "Geometria";
   src: url("./fonts/GeometriaRegular.woff") format("woff");

@@ -10,12 +10,10 @@ import { Provider } from "react-redux";
 import { setupStore } from './services/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-
 const store = setupStore();
 
-// "homepage": "https://kaililya.github.io/ins/",
-// basename="/ins/"
+
+
 root.render(
   <React.StrictMode>
     <Router >
@@ -27,3 +25,7 @@ root.render(
 );
 
 reportWebVitals();
+
+
+// "homepage": "https://compleon-solutions.de/",
+// basename="/ins/"

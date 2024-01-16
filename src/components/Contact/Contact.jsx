@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './Contact.module.css'
-import avatarFirst from '../../image/avatar_1.png'
-import avatarSecond from '../../image/avatar_2.png'
+import avatarFirst from '../../image/avatar_1_optimazed.png'
+import avatarSecond from '../../image/avatar_2_optimazed.png'
 
 
 function Contact() {

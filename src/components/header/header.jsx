@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 import styles2 from "../Footer/Footer.module.css";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -21,7 +21,6 @@ const Header = () => {
   };
 
   const handleRoute = () => {
-    console.log('sadsadsad');
     if (isBurger) {
       setIsBurger(false);
     } else {
@@ -46,9 +45,7 @@ const Header = () => {
         >
           <ul className={styles.nav_list}>
             <li className={`${styles.nav_item} ${styles.nav_item_dropdown}`}>
-              <li
-                className={`${styles2.links_container_columns} ${styles.links_container_columns__header}`}
-              >
+              <div className={`${styles2.links_container_columns} ${styles.links_container_columns__header}`}>
                 <NavLink className={switchClassNameMainLink} to="#">
                   Software
                 </NavLink>
@@ -66,7 +63,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
+              </div>
 
               <div className={styles.header__inner}>
                 <p className={styles.header__hover}>Software</p>
@@ -86,7 +83,7 @@ const Header = () => {
             </li>
 
             <li className={`${styles.nav_item} ${styles.nav_item_dropdown}`}>
-              <li
+              <div
                 className={`${styles2.links_container_columns} ${styles.links_container_columns__header}`}
               >
                 <NavLink className={switchClassNameMainLink} to="" >
@@ -111,7 +108,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
+              </div>
 
               <div className={styles.header__inner}>
                 <p className={styles.header__hover}>Service</p>
@@ -136,7 +133,7 @@ const Header = () => {
             </li>
 
             <li className={`${styles.nav_item} ${styles.nav_item_dropdown}`}>
-              <li
+              <div
                 className={`${styles2.links_container_columns} ${styles.links_container_columns__header}`}
               >
                 <NavLink className={switchClassNameMainLink} to="" >
@@ -161,7 +158,7 @@ const Header = () => {
                     </NavLink>
                   </li>
                 </ul>
-              </li>
+              </div>
 
               <div className={styles.header__inner}>
                 <p className={styles.header__hover}>Aktuelles</p>
@@ -193,7 +190,6 @@ const Header = () => {
             </NavLink>
             <Link
               to={'http://app.compleon-solutions.de'}
-              // state={{ background: location }}
             >
               <img
                 className={styles.right_nav_image}

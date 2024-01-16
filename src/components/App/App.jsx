@@ -1,7 +1,6 @@
 import './App.css';
 import Footer from '../Footer/Footer';
 import styles from './App.css'
-import Header from '../header/header';
 import { Route, Routes } from 'react-router-dom';
 import FunctionPage from '../../pages/FunctionPage/FunctionPage';
 import MainPage from '../../pages/MainPage/MainPage';
@@ -18,6 +17,7 @@ import ArticlesPage from '../../pages/ArticlesPage/ArticlesPage';
 import ErrorPage from '../../pages/ErrorPage/ErrorPage';
 import { articlePATH, articlesPATH, beratungPATH, datenschutzPATH, errorPATH, faqPATH, funktionenPATH, impressumPATH, kontaktPATH, mainPATH, prozessPATH, searchPATH, unternehmenPATH, wikiPATH } from '../../utils/constants';
 import SearchPage from '../../pages/SearchPage/SearchPage';
+import Header from '../Header/Header';
 
 
 function App() {

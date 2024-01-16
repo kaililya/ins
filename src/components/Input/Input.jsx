@@ -22,6 +22,7 @@ function Input({ isSubTitle }) {
     isActive
       ? `${styles.link_minor_active} ${styles.link_minor}`
       : `${styles.link_minor}`;
+
   const dispatch = useDispatch();
 
   useEffect(() => {

@@ -107,6 +107,7 @@ function PriceTarif() {
                 </>
               )}
             </p>
+            {console.log(item.attributes.ButtonPrice.link)}
             <a 
               className={styles.button}
               href={item.attributes.ButtonPrice.link}
@@ -173,7 +174,7 @@ function PriceTarif() {
                 </>
               )}
             </p>
-            {console.log(item.attributes.ButtonPrice)}
+            {/* {console.log(item.attributes.ButtonPrice)} */}
             {!item.attributes.ButtonPrice.isExternal ? (
              <a 
                className={styles.button}
@@ -185,7 +186,8 @@ function PriceTarif() {
             ) : (
               <NavLink
                className={styles.button}
-               to={item.attributes.ButtonPrice.link} >
+               to={item.attributes.ButtonPrice.link}>
+              {item.attributes.ButtonPrice.Title}
               </NavLink>
             )}
            

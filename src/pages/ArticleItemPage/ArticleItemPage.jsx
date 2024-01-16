@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { NavLink, useParams, useNavigate } from "react-router-dom";
 import styles from './ArticleItemPage.module.css'
-import newImage from '../../image/blog_image.png'
 import { useDispatch, useSelector } from "react-redux";
 import { fetchGetUniqueArticleThunk } from "../../services/thunks/swagger-thunk";
 import { TailSpin } from "react-loader-spinner";

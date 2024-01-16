@@ -72,12 +72,13 @@ export const fetchGetWikiThunk = () => async(dispatch) => {
   }
 }
 
-export const fetchLaws = (searchText, pageNumber, pageSize) => async(dispatch) => {
+export const fetchLaws = (searchText) => async(dispatch) => {
   try {
     const accessToken = await getAccessToken();
     dispatch(getLawsRequest());
     console.log(searchText)
-    const response = await axios.get(`${API_BASE_URL}/api/laws?filter[searchText]=${encodeURIComponent(searchText)}&filter[shortName]=${encodeURIComponent(searchText)}`, {
+    // ${encodeURIComponent(searchText)}
+    const response = await axios.get(`${API_BASE_URL}/api/laws?filter[searchText]=${encodeURIComponent(searchText)}`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${accessToken}`,

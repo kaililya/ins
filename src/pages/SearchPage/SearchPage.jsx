@@ -39,7 +39,8 @@ function SearchPage({ isSubTitle }) {
       : `${styles.link_minor}`;
       
  
-  const handleSearch = () => {
+  const handleSearch = (e) => {
+    e.preventDefault()
     if (inputValue) {
       dispatch(fetchLaws(inputValue, 1, 10));
     }
@@ -58,7 +59,7 @@ function SearchPage({ isSubTitle }) {
             Compliance-Audits. Auch gern mit unserer Hilfe.
           </p>
         )}
-        <div className={styles.input_container}>
+        <form className={styles.input_container}>
           <input
             value={inputValue}
             onChange={(e) => {
@@ -68,10 +69,10 @@ function SearchPage({ isSubTitle }) {
             type="text"
             placeholder="Prüfen Sie hier Ihre Norm"
           />
-          <button className={styles.button_sent} onClick={handleSearch}>
+          <button type="submit" className={styles.button_sent} onClick={handleSearch}>
             Prüfen
           </button>
-        </div>
+        </form>
       </div>
 
       <div className={styles.result_container_wrapper}>

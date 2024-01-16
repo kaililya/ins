@@ -7,6 +7,7 @@ import { BiSolidError } from "react-icons/bi";
 
 function AdvicePage() {
   const dispatch = useDispatch();
+
   useEffect(() => {
     window.scrollTo(0, 0);
     dispatch(fetchGetBeratungThunk());
@@ -14,7 +15,6 @@ function AdvicePage() {
 
   const {
     getBeratungRequest,
-    getBeratungRequestSuccess,
     getBeratungRequestFailed,
   } = useSelector((store) => store.swaggerDataReducer);
 
@@ -70,7 +70,7 @@ function AdvicePage() {
 
         <ul className={styles.advice_container}>
           {beratungData.map((advice) => (
-            <li className={styles.advice_item}>
+            <li key={advice.id} className={styles.advice_item}>
               <h4 className={styles.advice_title}>{advice.attributes.Title}</h4>
               <div className={styles.figure_direct} />
               <p className={styles.advice_sub_title}>

@@ -59,11 +59,11 @@
 }
 
 .result_container_wrapper::-webkit-scrollbar {
-  width: 8px; /* Ширина полосы прокрутки */
+  width: 8px; 
 }
 
 .result_container_wrapper::-webkit-scrollbar-track {
-  background-color: #f1f1f1; /* Цвет трека */
+  background-color: #f1f1f1; 
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 30px;
@@ -71,7 +71,7 @@
 }
 
 .result_container_wrapper::-webkit-scrollbar-thumb {
-  background-color: #d4d4d4; /* Цвет полосы прокрутки */
+  background-color: #d4d4d4; 
   border-radius: 30px;
 
 }
@@ -82,7 +82,7 @@
   background: #FFF;
   padding: 8px 0;
   padding-left: 37px;
-  padding-right: 166px;
+  padding-right: calc((100vw - 320px)/(1920 - 320) * (166 - 136) + 136px);
   box-sizing: border-box;
   height: 49px;
   display: block;
@@ -101,7 +101,7 @@
 .input::placeholder {
   color: #282882;
   font-family: Mont;
-  font-size: 14px;
+  font-size: calc((100vw - 320px)/(1920 - 320) * (14 - 11) + 11px);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -116,12 +116,12 @@
   margin-left: auto;
   display: block;
   font-family: Mont;
-  font-size:calc((100vw - 320px)/(1920 - 320) * (16 - 12) + 12px);
+  font-size: calc((100vw - 320px)/(1920 - 320) * (16 - 12) + 12px);
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
   display: flex;
-  width: calc((100vw - 320px)/(1920 - 320) * (172 - 145) + 145px);
+  width: calc((100vw - 320px)/(1920 - 320) * (172 - 125) + 125px);
   height: 42px;
   padding: 12px 25px 12px 25px;
   justify-content: center;
@@ -296,5 +296,14 @@
   display: block;
 }
 
-
+@media (max-width: 400px) {
+  .input::placeholder {
+    font-size: calc((100vw - 320px)/(400 - 320) * (14 - 8) + 8px);
+  }
+  
+  .input {
+   padding-left: 18px;
+   padding-right: 160px;
+  }
+}
 

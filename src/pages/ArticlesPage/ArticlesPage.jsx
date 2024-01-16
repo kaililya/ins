@@ -44,20 +44,18 @@ const ArticlesPage = () => {
     return resultArray;
   }
   const articlesDataPopLast = [...articlesData.data].slice(0, articlesData.data.length - 1)
-  console.log(articlesDataPopLast);
-
 
   const twoDArrayArticlesData = create2DArray(articlesDataPopLast);
 
   const sliderContent = () => {
     const sliders = [];
 
-    for (let i = 0;i < twoDArrayArticlesData.length; i++) {
+    for (let i = 0; i < twoDArrayArticlesData.length; i++) {
       sliders.push(
-        <SwiperSlide className={styles.articles_slide}>
+        <SwiperSlide key={i} className={styles.articles_slide}>
           <ul className={styles.articles_items}>
             {twoDArrayArticlesData[i].map((article) => (
-           <Link className={styles.link} to={`/article/${article.id}`}>
+           <Link key={article.id} className={styles.link} to={`/article/${article.id}`}>
             <li key={article.id} className={styles.articles_item}>
               <div className={styles.articles_text}>
                 <h4 className={styles.articles_title}>

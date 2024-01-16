@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './Hello.module.css'
-import laptopImage from '../../image/laptop.png'
-import laptopImageNew from '../../image/laptop_new_2.png'
+import laptopImageNew from '../../image/laptop_new_2_optimazed.png'
 import { kontaktPATH, prozessPATH } from "../../utils/constants";
 import { NavLink } from "react-router-dom";
 
