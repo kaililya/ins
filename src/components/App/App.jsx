@@ -23,7 +23,7 @@ import Header from '../Header/Header';
 function App() {
   return (
     <div className={styles.main_container}>
-      <Header /> 
+      <Header />
       <main className={styles.wrapper}>
       <Routes>
         <Route path={mainPATH} element={<MainPage />} />
