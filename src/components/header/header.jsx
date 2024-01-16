@@ -1,4 +1,4 @@
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 import styles2 from "../Footer/Footer.module.css";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";

@@ -17,7 +17,7 @@ import ArticlesPage from '../../pages/ArticlesPage/ArticlesPage';
 import ErrorPage from '../../pages/ErrorPage/ErrorPage';
 import { articlePATH, articlesPATH, beratungPATH, datenschutzPATH, errorPATH, faqPATH, funktionenPATH, impressumPATH, kontaktPATH, mainPATH, prozessPATH, searchPATH, unternehmenPATH, wikiPATH } from '../../utils/constants';
 import SearchPage from '../../pages/SearchPage/SearchPage';
-import Header from '../Header/Header';
+import Header from '../header/header';
 
 
 function App() {
