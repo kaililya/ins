@@ -189,13 +189,14 @@ const Header = () => {
               <button className={styles.button_contact} onClick={handleRoute}>Kontakt</button>
             </NavLink>
             <Link
-              aria-label="link to main page"
+              // aria-label="link to main page"
               to={'http://app.compleon-solutions.de'}
             >
               <img
                 className={styles.right_nav_image}
                 src={userSquare}
                 alt="icon"
+
               />
             </Link>
           </div>

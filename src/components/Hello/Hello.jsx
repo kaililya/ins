@@ -31,7 +31,7 @@ function Hello() {
         </li>
       </ul>
       
-      <div className={`${styles.second_column_container} ${styles.second_column_container__mobile}`}>
+      {/* <div className={`${styles.second_column_container} ${styles.second_column_container__mobile}`}>
         <Suspense fallback={<div>Loading...</div>}>
           <LazyImage />
         </Suspense>
@@ -41,7 +41,7 @@ function Hello() {
         <Suspense fallback={<div>Loading...</div>}>
           <LazyImage />
         </Suspense>
-      </div>
+      </div> */}
     </section>
   )
 }
