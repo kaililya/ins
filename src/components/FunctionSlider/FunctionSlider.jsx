@@ -119,7 +119,7 @@ function FunctionSlider() {
       >
         {serviceData.map((item) => (
           <SwiperSlide className={styles.slider_mobile} key={item.id}>
-            <li className={`${styles.function_item__swiper}`}>
+            <div className={`${styles.function_item__swiper}`}>
               <img
                 className={styles.function_item_image}
                 src={`https://admin.compleon-solutions.de${item.attributes.Image.data.attributes.url}`}
@@ -131,7 +131,7 @@ function FunctionSlider() {
               <p className={styles.function_item_sub_title}>
                 {item.attributes.Description}
               </p>
-            </li>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>

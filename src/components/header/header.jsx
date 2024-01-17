@@ -189,6 +189,7 @@ const Header = () => {
               <button className={styles.button_contact} onClick={handleRoute}>Kontakt</button>
             </NavLink>
             <Link
+              aria-label="link to main page"
               to={'http://app.compleon-solutions.de'}
             >
               <img
@@ -216,6 +217,7 @@ const Header = () => {
           </Link>
         </div>
         <button
+          aria-label="menu icon"
           className={
             isBurger
               ? `${styles.burger_icon} ${styles.burger_icon_active}`
