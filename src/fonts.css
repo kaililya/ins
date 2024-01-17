@@ -14,12 +14,12 @@
 }
 
 /* Mont-BoldItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-BoldItalic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
-}
+} */
 
 @font-face {
   font-family: 'Mont';
@@ -37,12 +37,12 @@
 }
 
 /* Mont-BookItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-BookItalic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
-}
+} */
 
 /* Mont-ExtraLight */
 @font-face {
@@ -53,12 +53,12 @@
 }
 
 /* Mont-ExtraLightItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-ExtraLightItalic.otf') format('opentype');
   font-weight: 200;
   font-style: italic;
-}
+} */
 
 /* Mont-Hairline */
 @font-face {
@@ -69,30 +69,29 @@
 }
 
 /* Mont-HairlineItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-HairlineItalic.otf') format('opentype');
   font-weight: 900;
   font-style: italic;
-}
+} */
 
 /* Mont-Heavy */
 @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-Heavy.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
+   font-weight: 900;
 
   font-style: normal;
 }
 
 /* Mont-HeavyItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-HeavyItalic.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
-
+  font-weight: 900;
   font-style: italic;
-}
+} */
 
 /* Mont-Light */
 @font-face {
@@ -103,13 +102,12 @@
 }
 
 /* Mont-LightItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-LightItalic.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
-
+  font-weight: 900;
   font-style: italic;
-}
+} */
 
 /* Mont-Regular */
 @font-face { 
@@ -120,48 +118,47 @@
 }
 
 /* Mont-RegularItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-RegularItalic.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
+  font-weight: 900;
 
   font-style: italic;
-}
+} */
 
 /* Mont-SemiBold */
 @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-SemiBold.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
+   font-weight: 900;
 
   font-style: normal;
 }
 
 /* Mont-SemiBoldItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-SemiBoldItalic.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
-
+  font-weight: 900;
   font-style: italic;
-}
+} */
 
 /* Mont-Thin */
 @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-Thin.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
+   font-weight: 900;
 
   font-style: normal;
 }
 
 /* Mont-ThinItalic */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-ThinItalic.otf') format('opentype');
-  /* font-weight: normal; */  font-weight: 900;
+   font-weight: 900;
   font-style: italic;
-}
+} */
 
 @font-face {
   font-family: 'Mont';
@@ -180,13 +177,13 @@
 	font-weight: 900;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
 	src: url("./fonts/TestDomaineText-BlackItalic.woff2") format("woff2"), url("./fonts/TestDomaineText-BlackItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
 @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
@@ -202,20 +199,20 @@
 	font-weight: 900;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
 	src: url("./fonts/TestDomaineText-LightItalic.woff2") format("woff2"), url("./fonts/TestDomaineText-LightItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: italic;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
 	src: url("./fonts/TestDomaineText-BoldItalic.woff2") format("woff2"), url("./fonts/TestDomaineText-BoldItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: italic;
-}
+} */
 @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
@@ -237,20 +234,20 @@
 	font-weight: 400;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
 	src: url("./fonts/TestDomaineText-MediumItalic.woff2") format("woff2"), url("./fonts/TestDomaineText-MediumItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: italic;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
 	src: url("./fonts/TestDomaineText-RegularItalic.woff2") format("woff2"), url("./fonts/TestDomaineText-RegularItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: italic;
-}
+} */
 @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -258,20 +255,20 @@
 	font-weight: 900;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-BlackItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-BlackItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-BoldItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-BoldItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
 @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -286,20 +283,20 @@
 	font-weight: 800;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-ExtraBoldItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-ExtraBoldItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
-@font-face {
+} */
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-ExtraLightItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-ExtraLightItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
 @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -307,13 +304,13 @@
 	font-weight: 200;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-LightItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-LightItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
 @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -335,13 +332,13 @@
 	font-weight: 500;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-MediumItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-MediumItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
 @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -356,13 +353,13 @@
 	font-weight: 600;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-SemiBoldItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-SemiBoldItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
 @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -370,10 +367,10 @@
 	font-weight: 100;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-ThinItalic.woff2") format("woff2"), url("./fonts/TTInterfaces-ThinItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
-}
+} */
