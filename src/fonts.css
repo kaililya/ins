@@ -29,12 +29,12 @@
 }
 
 /* Mont-Book */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-Book.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
-}
+} */
 
 /* Mont-BookItalic */
 /* @font-face {
@@ -45,12 +45,12 @@
 } */
 
 /* Mont-ExtraLight */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-ExtraLight.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
-}
+} */
 
 /* Mont-ExtraLightItalic */
 /* @font-face {
@@ -61,12 +61,12 @@
 } */
 
 /* Mont-Hairline */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-Hairline.otf') format('opentype');
   font-weight: 900;
   font-style: normal;
-}
+} */
 
 /* Mont-HairlineItalic */
 /* @font-face {
@@ -77,13 +77,13 @@
 } */
 
 /* Mont-Heavy */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-Heavy.otf') format('opentype');
    font-weight: 900;
 
   font-style: normal;
-}
+} */
 
 /* Mont-HeavyItalic */
 /* @font-face {
@@ -94,12 +94,12 @@
 } */
 
 /* Mont-Light */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-Light.otf') format('opentype');
   font-weight: 200;
   font-style: normal;
-}
+} */
 
 /* Mont-LightItalic */
 /* @font-face {
@@ -127,13 +127,13 @@
 } */
 
 /* Mont-SemiBold */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-SemiBold.otf') format('opentype');
    font-weight: 900;
 
   font-style: normal;
-}
+} */
 
 /* Mont-SemiBoldItalic */
 /* @font-face {
@@ -144,13 +144,13 @@
 } */
 
 /* Mont-Thin */
-@font-face {
+/* @font-face {
   font-family: 'Mont';
   src: url('./fonts/Mont/Mont-Thin.otf') format('opentype');
    font-weight: 900;
 
   font-style: normal;
-}
+} */
 
 /* Mont-ThinItalic */
 /* @font-face {
@@ -170,13 +170,13 @@
 
 
 
-@font-face {
+/* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
 	src: url("./fonts/TestDomaineText-Black.woff2") format("woff2"), url("./fonts/TestDomaineText-Black.woff") format("woff");
 	font-weight: 900;
 	font-style: normal;
-}
+} */
 /* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
@@ -192,13 +192,13 @@
 	font-style: normal;
 }
 
-@font-face {
+/* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
 	src: url("./fonts/test-domaine-text-black.woff2") format("woff2");
 	font-weight: 900;
 	font-style: normal;
-}
+} */
 /* @font-face {
 	font-family: TestDomaineText;
 	font-display: swap;
@@ -248,13 +248,13 @@
 	font-weight: 400;
 	font-style: italic;
 } */
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-Black.woff2") format("woff2"), url("./fonts/TTInterfaces-Black.woff") format("woff");
 	font-weight: 900;
 	font-style: normal;
-}
+} */
 /* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -276,13 +276,13 @@
 	font-weight: 700;
 	font-style: normal;
 }
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-ExtraBold.woff2") format("woff2"), url("./fonts/TTInterfaces-ExtraBold.woff") format("woff");
 	font-weight: 800;
 	font-style: normal;
-}
+} */
 /* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -297,13 +297,13 @@
 	font-weight: 400;
 	font-style: normal;
 } */
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-ExtraLight.woff2") format("woff2"), url("./fonts/TTInterfaces-ExtraLight.woff") format("woff");
 	font-weight: 200;
 	font-style: normal;
-}
+} */
 /* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
@@ -360,13 +360,13 @@
 	font-weight: 400;
 	font-style: normal;
 } */
-@font-face {
+/* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;
 	src: url("./fonts/TTInterfaces-Thin.woff2") format("woff2"), url("./fonts/TTInterfaces-Thin.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
-}
+} */
 /* @font-face {
 	font-family: TTInterfaces;
 	font-display: swap;

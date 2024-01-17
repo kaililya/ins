@@ -76,7 +76,7 @@ function Process() {
       className={`mySwiper ${styles.wrapper}`}
       >
       <SwiperSlide className={styles.swiper_slide}>
-        <li className={styles.process_item}>
+        <div className={styles.process_item}>
           <div className={styles.number_curcle}>
             1
           </div>
@@ -86,10 +86,10 @@ function Process() {
           <p className={styles.process_item_sub_title}>
             Gemeinsam ermitteln und bewerten wir den Ist-Zustand Ihrer Systeme und Dokumente, die Sie bereits für ein Rechtskataster verwenden und integrieren diese in Compleon.
           </p>
-        </li>
+        </div>
       </SwiperSlide>
       <SwiperSlide>
-        <li className={styles.process_item}>
+        <div className={styles.process_item}>
           <div className={styles.number_curcle}>
             2
           </div>
@@ -99,11 +99,11 @@ function Process() {
           <p className={styles.process_item_sub_title}>
             Wir besuchen Sie vor Ort und legen mit Ihnen die einschlägigen Rechtspflichten für Ihr Unternehmen fest. Sie erhalten Ihr individuelles Rechts- und Normenkataster und eine Ersteinweisung in die Software.
           </p>
-        </li>
+        </div>
       </SwiperSlide>
 
       <SwiperSlide>
-        <li className={styles.process_item}>
+        <div className={styles.process_item}>
           <div className={styles.number_curcle}>
             3
           </div>
@@ -113,11 +113,11 @@ function Process() {
           <p className={styles.process_item_sub_title}>
            Wir übernehmen das monatliche Screening von Gesetzen und die Vorbewertung der Gesetzesänderungen. Sie werden per E‑Mail informiert und kümmern sich um die relevanten Änderungen und das Maßnahmenmanagement.
           </p>
-        </li>
+        </div>
       </SwiperSlide>
 
       <SwiperSlide>
-        <li className={styles.process_item}>
+        <div className={styles.process_item}>
           <div className={styles.number_curcle}>
             4
           </div>
@@ -127,7 +127,7 @@ function Process() {
           <p className={styles.process_item_sub_title}>
             Dokumentieren Sie mit Compleon die Einhaltung von Normen (Compliance Audits). Binden Sie interne oder externe Auditoren mit ein, oder uns. Eine umfassende Unterstützung bieten wir an über UUB Schwan.
           </p>
-        </li>
+        </div>
       </SwiperSlide>
 
 
@@ -138,7 +138,6 @@ function Process() {
           Service-Leistungen
         </NavLink>
       </li>
-        
     </ul>
   </section>);
 }

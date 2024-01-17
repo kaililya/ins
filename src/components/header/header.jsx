@@ -207,12 +207,14 @@ const Header = () => {
           </NavLink>
           <Link
             to={"http://app.compleon-solutions.de"}
-            // state={{ background: location }}
+            role="link"
+            tabIndex={0}
+            aria-label="Go to the main page"
           >
             <img
               className={styles.right_nav_image}
               src={userSquare}
-              alt="icon"
+              alt="icon of the main page"
             />
           </Link>
         </div>
