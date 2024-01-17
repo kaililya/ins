@@ -1,8 +1,10 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import styles from './Hello.module.css'
-import laptopImageNew from '../../image/laptop_new_2_optimazed.png'
 import { kontaktPATH, prozessPATH } from "../../utils/constants";
 import { NavLink } from "react-router-dom";
+
+const LazyImage = lazy(() => import('../LazyImage/LazyImage')); // Создаем ленивый компонент для изображения
+
 
 function Hello() {
   return (
@@ -30,11 +32,15 @@ function Hello() {
       </ul>
       
       <div className={`${styles.second_column_container} ${styles.second_column_container__mobile}`}>
-        <img className={styles.image} src={laptopImageNew} alt="icon" />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyImage />
+        </Suspense>
       </div>
 
       <div className={`${styles.second_column_container} ${styles.second_column_container__desktop}`}>
-        <img className={styles.image} src={laptopImageNew} alt="icon" />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyImage />
+        </Suspense>
       </div>
     </section>
   )
