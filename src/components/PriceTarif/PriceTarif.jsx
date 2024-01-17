@@ -137,7 +137,7 @@ function PriceTarif() {
       >
         {priceData.map((item) => (
          <SwiperSlide key={item.attributes.id} className={styles.swiper_slide}>
-          <li key={item.attributes.id} className={`${styles.tarif_item} ${styles.tarif_item__mobile}`}>
+          <div key={item.attributes.id} className={`${styles.tarif_item} ${styles.tarif_item__mobile}`}>
             <h2 className={styles.title}>
               {item.attributes.Title}
             </h2>
@@ -200,7 +200,7 @@ function PriceTarif() {
                 </>
               )}
             </p>
-          </li>
+          </div>
         </SwiperSlide>
 
         ))}
