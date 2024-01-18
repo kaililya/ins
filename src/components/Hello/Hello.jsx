@@ -30,11 +30,11 @@ function Hello() {
       </ul>
       
       <div className={`${styles.second_column_container} ${styles.second_column_container__mobile}`}>
-       <img className={styles.image} src={laptopImageNew} alt="icon" />;
+       <img className={styles.image} loading="eager" src={laptopImageNew} alt="icon" />;
       </div>
 
       <div className={`${styles.second_column_container} ${styles.second_column_container__desktop}`}>
-        <img className={styles.image} src={laptopImageNew} alt="icon" />;
+        <img className={styles.image} loading="eager" src={laptopImageNew} alt="icon" />;
       </div>
     </section>
   )
