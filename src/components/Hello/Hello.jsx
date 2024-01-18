@@ -1,10 +1,8 @@
-import React, { lazy, Suspense } from "react";
+import React, {Suspense,  } from "react";
 import styles from './Hello.module.css'
 import { kontaktPATH, prozessPATH } from "../../utils/constants";
 import { NavLink } from "react-router-dom";
-
-const LazyImage = lazy(() => import('../LazyImage/LazyImage')); // Создаем ленивый компонент для изображения
-
+import LazyImage from "../LazyImage/LazyImage";
 
 function Hello() {
   return (
@@ -41,6 +39,7 @@ function Hello() {
         <Suspense fallback={<div>Loading...</div>}>
           <LazyImage />
         </Suspense>
+
       </div>
     </section>
   )

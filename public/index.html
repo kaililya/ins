@@ -15,10 +15,21 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link  rel="preconnect" href="https://fonts.googleapis.com">
-    <link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link  href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-   
+    <noscript>
+      <link  rel="preconnect" href="https://fonts.googleapis.com">
+      <link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link  href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </noscript>
+    <script type="application/javascript">
+      // Загрузить содержимое <noscript class="loadLater"></noscript>  после загрузки страницы
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var loadLater = document.querySelector('.loadLater');
+          var head = document.querySelector('head');
+          if(loadLater && head){
+              head.insertAdjacentHTML('beforeend', loadLater.innerHTML);
+          }
+      });
+    </script>
     <title>React App</title>
         <!-- Start Single Page Apps for GitHub Pages -->
         <!-- <script type="text/javascript">
