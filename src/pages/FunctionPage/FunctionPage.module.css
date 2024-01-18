@@ -4,6 +4,18 @@
   padding-bottom: 1px;
 }
 
+.spoiler {
+  color: #30D94E;
+  text-align: center;
+  font-family: Mont;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.1px; /* 145% */
+  text-transform: uppercase;
+
+}
+
 .function_container {
   margin-top: 50px;
   padding-bottom: 50px;

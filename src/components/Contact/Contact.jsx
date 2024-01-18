@@ -1,21 +1,21 @@
 import React from "react";
-import styles from './Contact.module.css'
-import avatarFirst from '../../image/avatar_1_optimazed.png'
-import avatarSecond from '../../image/avatar_2_optimazed.png'
-
+import styles from "./Contact.module.css";
+import avatarFirst from "../../image/avatar_1_optimazed.png";
+import avatarSecond from "../../image/avatar_2_optimazed.png";
 
 function Contact() {
   return (
     <section className={styles.main_container}>
-      <p className={styles.spoiler}>
-        Kontakt
-      </p>
-      <h2 className={styles.title}>
-       Sie wünschen eine persön­liche Beratung?
-      </h2>
-      <p className={styles.sub_title}>
-        In Compleon Solutions kommt das Beste aus zwei Welten zusammen: Eine anwenderfreundliche Software und eine befüllte Rechtsdatenbank, die Sicherheit für das Management bietet.“Michael Gunkel, Geschäftsführer der UUB-IT
-      </p>
+      <p className={styles.spoiler}>Kontakt</p>
+      <h2 className={styles.title}>Sie wünschen eine persön­liche Beratung?</h2>
+      <blockquote className={styles.sub_title}>
+        <p className={styles.sub_title}>
+          “In Compleon Solutions kommt das Beste aus zwei Welten zusammen: Eine
+          anwenderfreundliche Software und eine befüllte Rechtsdatenbank, die
+          Sicherheit für das Management bietet.“
+        </p>
+        <cite className={styles.sub_title}>Michael Gunkel, Geschäftsführer der UUB-IT</cite>
+      </blockquote>
       <ul className={styles.contact_container}>
         <li className={styles.contact_item}>
           <div className={styles.image_wrapper}>
@@ -31,16 +31,17 @@ function Contact() {
         </li>
       </ul>
       <ul className={styles.button_container}>
+        <li className={styles.button}>Factsheet holen (PDF)</li>
         <li className={styles.button}>
-            Factsheet holen (PDF)
-        </li>
-        <li className={styles.button}>
-          <a href='tel:0309302981916' className={styles.link}>
+          <a href="tel:0309302981916" className={styles.link}>
             T. 030 93 029 819 16
           </a>
         </li>
         <li className={styles.button}>
-         <a href="mailto:contact@compleon-solutions.de" className={styles.link}>
+          <a
+            href="mailto:contact@compleon-solutions.de"
+            className={styles.link}
+          >
             Mail schreiben
           </a>
         </li>

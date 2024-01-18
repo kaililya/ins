@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./FunctionSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
 import { useDispatch, useSelector } from "react-redux";
@@ -60,12 +60,20 @@ function FunctionSlider() {
         )}
         <Swiper
           direction={"horizontal"}
-          spaceBetween={10}
+          // spaceBetween={10}
           slidesPerView={3}
+          navigation={{
+            nextEl: `.${styles.swiper_button_next}`,
+            prevEl: `.${styles.swiper_button_prev}`,
+          }}
+          fade={true}
+          // navigation={true}
+          
+
           pagination={{
             clickable: true,
           }}
-          modules={[Pagination]}
+          modules={[Navigation, Pagination]}
           className={`mySwiper ${styles.wrapper_desktop}`}
         >
           {serviceData.map((item) => (
@@ -87,6 +95,8 @@ function FunctionSlider() {
               </div>
             </SwiperSlide>
           ))}
+          <div className={styles.swiper_button_next}></div>
+          <div className={styles.swiper_button_prev}></div>
         </Swiper>
       </div>
       {/* <ul className={styles.function_container}>

@@ -46,11 +46,12 @@
 }
 
 .input__textarea {
+  font-family: Mont;
   max-height: 186px;
   height: auto;
   border-radius: 16px;
-
 }
+
 
 .input::placeholder {
   color: #282882;
@@ -61,11 +62,15 @@
   line-height: normal;
 }
 
+.input__textarea::placeholder {
+  color: #4E4E4E;
+}
+
 .button_contact {
-  font-family: Mont;
+  /* font-family: Inter; */
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 145%;
   display: flex;
   width: calc((100vw - 320px)/(1920 - 320) * (290 - 174) + 174px);
@@ -90,7 +95,7 @@
 
 .request_meassage {
   color: #EC5E43;
-  font-family: Inter;
+  /* font-family: Inter; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

@@ -15,6 +15,8 @@ function FunctionPage() {
   return (
     <>
       <div className={styles2.background}>
+      <p className={styles2.spoiler}>Funktionen</p>
+
         <h2 className={styles.title}>Mehr als Excel – software as a service</h2>
         <p className={styles.sub_title}>
           Mit Compleon Solutions steuern Sie die Rechtspflichten, Maßnahmen und

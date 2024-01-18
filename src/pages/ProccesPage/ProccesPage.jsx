@@ -72,7 +72,7 @@ function ProccesPage() {
         </ul>
         <ul className={styles.button_container}>
           <li className={styles.button_container_item}>
-            <NavLink to={""} className={styles.link}>
+            <NavLink to={"/beratung"} className={styles.link}>
               Service-Leistungen
             </NavLink>
           </li>

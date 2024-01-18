@@ -48,17 +48,9 @@ function FormPage() {
     },
   ];
 
-  // ,
-  // {
-  //   name: "message",
-  //   type: "text",
-  //   placeholder: "Your text here....",
-  //   required: true,
-  // }
-
   return (
     <section className={styles.main_container}>
-      <h2 className={styles.title}>Nehmen Sie Kontakt mit und auf</h2>
+      <h2 className={styles.title}>Nehmen Sie per Formular Kontakt mit uns auf oder rufen Sie uns an</h2>
       <form className={styles.form} action="POST" onSubmit={hadleSubmit}>
         {inputsFormPage.map((input) => (
           <input
@@ -72,10 +64,9 @@ function FormPage() {
           name="message"
           id="message"
           className={`${styles.input} ${styles.input__textarea}`}
-          placeholder="Describe yourself here..."
+          placeholder="Ihre Mitteilung an uns"
           rows={9}
         />
-
         <button className={styles.button_contact}>Abschicken</button>
       </form>
       <p className={styles.request_meassage}>

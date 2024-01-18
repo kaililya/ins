@@ -5,6 +5,10 @@ import { fetchGetBeratungThunk } from "../../services/thunks/swagger-thunk";
 import { TailSpin } from "react-loader-spinner";
 import { BiSolidError } from "react-icons/bi";
 
+// TODO
+// вернутс к advice_item заданию динаминых падингов
+
+
 function AdvicePage() {
   const dispatch = useDispatch();
 
@@ -37,7 +41,7 @@ function AdvicePage() {
           </p>
         </div>
         <h3 className={styles.title_second}>
-          Software plus Beratung – masgeschneidert und akkurat.
+          Software plus Beratung – ma<span className={`${styles.title_second} ${styles.title_second__no_uper}`}>&szlig;</span>geschneidert und akkurat.
         </h3>
         <p className={styles.sub_title_second}>
           Mit unserer Beratung sind Sie jederzeit auf der sicheren Seite. Wir
