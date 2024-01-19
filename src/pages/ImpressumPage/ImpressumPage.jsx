@@ -2,10 +2,9 @@ import React, { useEffect } from 'react';
 import styles from './ImpressumPage.module.css';
 
 const ImpressumPage = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); 
+  }, []);
 
   return (
     <div className={styles.imprint}>
@@ -22,7 +21,7 @@ const ImpressumPage = () => {
             <h6 className={styles.imprint_title}>Betreiber und Kontakt:</h6>
             <div className={styles.imprint_inner}>
               <p className={styles.imprint_subtitle}>
-                Umwelt- und Unternehmensberatung Schwan GmbH (UUB)
+                Umwelt- und Unternehmensberatung <p>Schwan GmbH (UUB)</p>
               </p>
             </div>
             <div className={styles.imprint_inner}>
@@ -40,8 +39,10 @@ const ImpressumPage = () => {
             <h6 className={styles.imprint_title}>Vertretung:</h6>
             <div className={styles.imprint_inner}>
               <p className={styles.imprint_subtitle}>
-                Umwelt- und Unternehmensberatung Schwan GmbH (UUB) wird vertreten durch die
-                Geschäftsführer: Dr. Anke Schwan und Thomas Schwan
+                <p>Umwelt- und Unternehmensberatung Schwan</p>
+                <p>GmbH (UUB) wird vertreten durch die</p>
+                <p>Geschäftsführer: Dr. Anke Schwan und</p>
+                <p>Thomas Schwan</p>
               </p>
             </div>
             <div className={styles.imprint_inner}>
@@ -62,9 +63,11 @@ const ImpressumPage = () => {
             </div>
             <div className={styles.imprint_inner}>
               <p className={styles.imprint_subtitle}>
-                Berufshaftlichtversicherung: Wir sind bei der folgender Versicherung
-                berufshaftpflichtversichert: HDI Versicherung AG Neumarkt 15 66117 Saarbrücken
-                Berufshaftlicht gültig für (Land): Deutschland
+                <p>Berufshaftlichtversicherung:</p>
+                <p>Wir sind bei der folgender Versicherung</p>
+                <p>berufshaftpflichtversichert: HDI Versicherung AG</p>
+                <p>Neumarkt 15 66117 Saarbrücken</p>
+                <p>Berufshaftlicht gültig für (Land): Deutschland</p>
               </p>
             </div>
             <div className={styles.imprint_inner}>
@@ -77,7 +80,8 @@ const ImpressumPage = () => {
             </div>
             <div className={styles.imprint_inner}>
               <p className={styles.imprint_subtitle}>
-                Verantwortlicher für journalistisch-redaktionelle Inhalte gem. § 55 II RstV:
+                <p>Verantwortlicher für journalistisch-redaktionelle</p>
+                <p>Inhalte gem. § 55 II RstV:</p>
               </p>
               <p className={styles.imprint_subtitle}>Thomas Schwan</p>
             </div>
@@ -86,7 +90,7 @@ const ImpressumPage = () => {
             </div>
           </div>
 
-          <div className={styles.imprint_item}>
+          <div className={`${styles.imprint_item} ${styles.imprint_item_big}`}>
             <h6 className={`${styles.imprint_title} ${styles.imprint_title_big}`}>Die Umwelt</h6>
             <div className={styles.imprint_inner}>
               <p className={`${styles.imprint_subtitle} ${styles.imprint_subtitle_big}`}>
@@ -104,7 +108,7 @@ const ImpressumPage = () => {
               Haftungsausschluss
             </h6>
             <div className={styles.imprint_inner}>
-            <p className={`${styles.imprint_subtitle} ${styles.imprint_subtitle_big}`}>
+              <p className={`${styles.imprint_subtitle} ${styles.imprint_subtitle_big}`}>
                 Die Umwelt- und Unternehmensberatung Schwan GmbH hat auf diesen Seiten Links zu
                 anderen Seiten im Internet gelegt. Für all diese Links gilt: Die Umwelt- und
                 Unternehmensberatung Schwan GmbH hat keinen Einfluss auf die Gestaltung und die
@@ -117,7 +121,7 @@ const ImpressumPage = () => {
           <div className={styles.imprint_item}>
             <h6 className={`${styles.imprint_title} ${styles.imprint_title_big}`}>Copyright</h6>
             <div className={styles.imprint_inner}>
-            <p className={`${styles.imprint_subtitle} ${styles.imprint_subtitle_big}`}>
+              <p className={`${styles.imprint_subtitle} ${styles.imprint_subtitle_big}`}>
                 Der Inhalt der Umwelt- und Unternehmensberatung Schwan GmbH Website ist
                 urheberrechtlich geschützt. Die Vervielfältigung von Informationen oder Daten,
                 insbesondere die Verwendung von Texten, Textteilen oder Bildmaterial, bedarf der

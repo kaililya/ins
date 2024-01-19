@@ -129,7 +129,6 @@ const ArticlesPage = () => {
           <div
             className={`${styles.articles_item} ${styles.articles_item_big}`}
           >
-
             <div
               className={`${styles.articles_text} ${styles.articles_text_big}`}
             >

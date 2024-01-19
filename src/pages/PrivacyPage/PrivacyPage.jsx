@@ -8,10 +8,9 @@ import 'swiper/css';
 import styles from './PrivacyPage.module.css';
 
 const PrivacyPage = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []); 
+  }, []);
 
   return (
     <div className={styles.privacy}>
@@ -28,7 +27,7 @@ const PrivacyPage = () => {
 
         <Swiper
           modules={[Pagination]}
-          spaceBetween={20}
+          spaceBetween={33}
           pagination={{
             clickable: true,
           }}
@@ -47,7 +46,9 @@ const PrivacyPage = () => {
           <SwiperSlide className={styles.privacy_slide}>
             <div className={styles.privacy_items}>
               <div className={styles.privacy_item}>
-                <h4 className={styles.privacy_title}>Nicht-personenbezogene Daten</h4>
+                <h4 className={styles.privacy_title}>
+                  <p>Nicht-personenbezogene</p> Daten
+                </h4>
                 <p className={styles.privacy_subtitle}>
                   Wenn Sie auf unsere Website zugreifen, wird dies automatisch protokolliert.
                   Erhoben werden die IP-Adresse Ihres Providers, ausgewählte Websites, der
@@ -87,7 +88,9 @@ const PrivacyPage = () => {
           <SwiperSlide className={styles.privacy_slide}>
             <div className={styles.privacy_items}>
               <div className={styles.privacy_item}>
-                <h4 className={styles.privacy_title}>Personenbezogene Daten</h4>
+                <h4 className={styles.privacy_title}>
+                  <p>Personenbezogene</p> Daten
+                </h4>
                 <p className={styles.privacy_subtitle}>
                   Personenbezogene Daten werden auf der Website nur erhoben, wenn Sie uns diese von
                   sich aus für personalisierte Dienste zur Verfügung stellen. Dies ist
@@ -116,7 +119,7 @@ const PrivacyPage = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className={styles.privacy_slide}>
-            <div className={styles.privacy_items}>
+            <div className={`${styles.privacy_items} ${styles.privacy_items_last}`}>
               <div className={styles.privacy_item}>
                 <h4 className={styles.privacy_title}>Verwendungszwecke</h4>
                 <p className={styles.privacy_subtitle}>
@@ -141,7 +144,7 @@ const PrivacyPage = () => {
               </div>
               <div className={styles.privacy_item}>
                 <h4 className={styles.privacy_title}>Auskunfts- und Widerspruchsrecht</h4>
-                <p className={styles.privacy_subtitle}>
+                <p className={`${styles.privacy_subtitle} ${styles.privacy_subtitle_last}`}>
                   Sie können jederzeit Auskunft über die von uns über Sie gespeicherten Daten
                   erhalten und haben die Möglichkeit, diese zu berichtigen, wenn Sie Ihrer Meinung
                   nach veraltet sind. Außerdem ist es möglich, Ihre Zustimmung zur Erhebung und
