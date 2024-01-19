@@ -191,11 +191,6 @@
 }
 
 
-
-.slide_container {
-
-}
-
 .spiner {
   margin: 0 auto;
   max-width: 100px;
@@ -213,47 +208,6 @@
 .advice_title {
   text-align: center;
 }
-
-.wrapper_desktop {
-  position: relative;
-  /* width: 70%; */
-  margin: 0 auto;
-}
-
-
-
-.swiper_button_next,
-.swiper_button_prev {
-  height: 60px;
-  background: red;
-  border: #282882 4px solid;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 60px;
-  z-index: 9999;
-}
-
-.swiper_button_next {
-  margin-top: 0px;
-  position: absolute;
-  top: 50%;
-  right: -40px;
-  width: 45px;
-  height: 45px;
-  transform: translateY(-50%);
-
-}
-
-.swiper_button_prev {
-  position: absolute;
-  top: 50%;
-  left: -40px;
-  width: 45px;
-  height: 45px;
-  transform: translateY(-50%);
-  margin-top: 0px;}
-
 
 
 @media (max-width: 1024px) {

@@ -5,13 +5,16 @@
 }
 
 .wiki {
+  padding-right: 14px;
+  padding-left: 16px;
   padding-bottom: 80px;
+  margin-top: calc((100vw - 414px)/(1920 - 414) * (60 - 0) + 0px);
+  
 }
 
 .wiki_container {
-	max-width: 1370px;
+	max-width: 1334px; 
 	margin: 0 auto;
-	padding: 0 24px;
 	display: grid;
 	grid-template-columns: 330px 1fr;
 }
@@ -34,14 +37,14 @@
   text-align: center;
 }
 
-
-
 .wiki_title {
 	color: #282882;
 	font-family: "TestDomaineText";
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 70px;
+  margin-bottom: 10px;
+  margin-top: 24px;
 }
 
 .wiki_inner {
@@ -108,8 +111,8 @@
 	grid-row: 1/666;
 	grid-column: 2/3;
 	border-left: 1px solid #dfdfdf;
-	padding-left: 75px;
-	margin-left: 40px;
+	padding-left: 74px;
+	margin-left: 30px;
 }
 
 @media (max-width: 991px) {

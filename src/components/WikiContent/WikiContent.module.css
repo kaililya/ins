@@ -1,15 +1,25 @@
 .wiki_title {
 	color: #282882;
 	font-family: "TestDomaineText", Arial, Helvetica, sans-serif;
-	font-size: calc((100vw - 320px) / (1920 - 320) * (32 - 26) + 26px);
+	font-size: calc((100vw - 414px) / (1920 - 414) * (32 - 24) + 24px);
 	font-weight: 700;
 	line-height: 70px;
+  margin-bottom: calc((100vw - 414px) / (1920 - 414) * (9px - 0) + 0px);
 }
+
 .wiki_subtitle {
 	color: #4e4e4e;
 	font-family: "Inter",  Arial, Helvetica, sans-serif;
-	font-size: calc((100vw - 320px) / (1920 - 320) * (20 - 16) + 16px);
+	font-size: calc((100vw - 414px) / (1920 - 414) * (20 - 16) + 16px);
 	line-height: 26px;
 	margin-bottom: 15px;
   padding-right: 19px;
+  max-width: 930px;
+}
+
+@media (max-width: 991px) {
+  .wiki {
+    border-top: 1px solid #DFDFDF;
+    border-bottom: 1px solid #DFDFDF;
+  }
 }

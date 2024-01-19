@@ -95,8 +95,8 @@ function FunctionSlider() {
               </div>
             </SwiperSlide>
           ))}
-          <div className={styles.swiper_button_next}></div>
-          <div className={styles.swiper_button_prev}></div>
+          {/* <div className={styles.swiper_button_next}></div>
+          <div className={styles.swiper_button_prev}></div> */}
         </Swiper>
       </div>
       {/* <ul className={styles.function_container}>
