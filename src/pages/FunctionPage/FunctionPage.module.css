@@ -4,6 +4,22 @@
   padding-bottom: 1px;
 }
 
+.title {
+  color: #303030;
+  font-weight: 700;
+  line-height: calc((100vw - 414px)/(1920 - 414) * (70 - 40) + 40px);
+  font-size: calc((100vw - 414px)/(1920 - 414) * (60 - 32) + 32px);
+  max-width: 630px;
+  margin-bottom: 18px;
+}
+
+.sub_title {
+  max-width: 1270px;
+  font-weight: 500;
+  margin-bottom: 48px;
+
+}
+
 .spoiler {
   color: #30D94E;
   text-align: center;
@@ -23,6 +39,12 @@
 
 .function_slider_wrapper {
   margin-bottom: 30px;
-  /* padding-bottom: 20px; */
-  /* background-color: aqua; */
+}
+
+@media (max-width: 600px) {
+
+  .title {
+    margin-bottom: 34px;
+  }
+
 }

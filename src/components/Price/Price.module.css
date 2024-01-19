@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 55px 53px;
+  padding: 56px 53px;
 }
 
 .spoiler {
@@ -18,18 +18,19 @@
   line-height: 26.1px; /* 145% */
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 9px;
 }
 
 .title {
   color: #303030;
   text-align: center;
-  font-size: calc((100vw - 320px)/(1920 - 320) * (60 - 32) + 32px);
+  font-size: calc((100vw - 414px)/(1920 - 414) * (60 - 32) + 32px);
   font-style: normal;
   font-weight: 700;
   line-height: 118.75%;
   font-family: TestDomaineText;
   margin: 0;
-  margin-bottom: calc((100vw - 320px)/(1920 - 320) * (40 - 20) + 20px);
+  margin-bottom: calc((100vw - 414px)/(1920 - 414) * (40 - 20) + 20px);
 }
 
 .sub_title {
@@ -40,7 +41,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: 26.1px; 
-  max-width: 680px;
+  max-width: 800px;
   margin: 0;
+}
 
+@media (max-width: 600px) {
+  .main_container {
+    background: #79FF91;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 64px;
+  }
 }

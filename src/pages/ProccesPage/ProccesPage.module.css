@@ -1,3 +1,11 @@
+.background {
+  background-color: #79FF91;
+  padding-bottom: 1px;
+  padding-top: 32px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
 .main_container {
   display: flex;
   flex-direction: column;
@@ -5,20 +13,12 @@
   padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-bottom: calc((100vw - 320px)/(1920 - 320) * (104 - 50) + 50px);
-  padding-top: calc((100vw - 320px)/(1920 - 320) * (35 - 30) + 30px);
-}
-
-.background {
-  background-color: #79FF91;
-  padding-bottom: 1px;
-  padding-top: 30px;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-bottom: calc((100vw - 414px)/(1920 - 414) * (104 - 30) + 30px);
+  padding-top: calc((100vw - 414px)/(1920 - 414) * (35 - 30) + 30px);
 }
 
 .spoiler {
-  color: #BEBEDA;
+  color: #30D94E;
   font-family: Mont;
   font-size: 18px;
   font-style: normal;
@@ -30,33 +30,34 @@
 }
 
 .title {
-  color: #282882;
-  font-family: Test Domaine Text;
+  color: #303030;
+  font-family: TestDomaineText;
   font-size: 55px;
   font-style: normal;
-  font-size: calc((100vw - 320px)/(1920 - 320) * (55 - 32) + 32px);
+  font-size: calc((100vw - 414px)/(1920 - 414) * (60 - 32) + 32px);
   font-style: normal;
   font-weight: 600;
   line-height: 120%; 
-  max-width: 440px;
+  max-width: 630px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: calc((100vw - 320px)/(1920 - 320) * (39 - 20) + 20px);
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .sub_title {
   color: #4E4E4E;
   font-family: Mont;
-  font-size: calc((100vw - 320px)/(1920 - 320) * (18 - 12) + 12px);
+  font-size: calc((100vw - 414px)/(1920 - 414) * (18 - 12) + 12px);
   font-style: normal;
-  font-weight: 200;
   line-height: 26.1px; 
   margin: 22px 0 70px;
   margin: 0 auto;
   text-align: center;
-  max-width: 640px;
-  margin-bottom: calc((100vw - 320px)/(1920 - 320) * (40 - 30) + 30px);
+  max-width: 1397px;
+  margin-bottom: calc((100vw - 414px)/(1920 - 414) * (48 - 33) + 33px);
+  color: #303030;
+  font-weight: 400;
 }
 
 .process_container {
@@ -64,9 +65,8 @@
   display: flex;
   flex-direction: column;
   column-gap: 18px;
-  row-gap: 23px;
+  row-gap: 9px;
   max-width: 1387px;
-  /* width: calc((100vw - 320px)/(1920 - 320) * (1387 - 382) + 382px); */
 }
 
 .process_item {
@@ -76,26 +76,23 @@
   border-radius: 20px;
   background: #F9F9F9;
   box-shadow: 0px 8px 26px 0px rgba(203, 184, 184, 0.19);
-  padding: 50px 37px;
-  box-sizing: border-box;
-  gap: 25px;
+  padding: 73px 69px 73px 63px;
+  gap: 27px;
+  max-width: 1367px;
 }
 
 .number_curcle {
   color: #444;
-  font-family: Test Domaine Text;
+  font-family: TestDomaineText;
   font-size: 62px;
   font-style: normal;
   font-weight: 400;
-  line-height: 98px; /* 158.065% */
+  line-height: 98px; 
   width: 116px;
   height: 116px;
   min-width: 116px;
   min-height: 116px;
   border-radius: 50%;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background-color: #FFC0B4;
   position: relative;
 
@@ -111,11 +108,11 @@
 .process_item_title {
   flex: 1;
   color: #282882;
-  font-family: Test Domaine Text;
+  font-family: TestDomaineText;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 27.3px; /* 113.75% */
+  line-height: 27.3px; 
   text-transform: uppercase;
   text-align: left;
   margin: 0;
@@ -138,7 +135,7 @@
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: calc((100vw - 320px)/(1920 - 320) * (60 - 30) + 30px);
+  margin-top: calc((100vw - 414px)/(1920 - 414) * (57 - 30) + 30px);
   gap: 29px;
   list-style: none;
 }
@@ -146,7 +143,7 @@
 .button_container_item {
   color: #EC5E43;
   text-align: center;
-  font-family: Mont;
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 200;
@@ -176,7 +173,7 @@
 }
 
 .wrapper {
-  width: calc((100vw - 320px)/(1920 - 320) * (600 - 300) + 300px);
+  width: calc((100vw - 414px)/(1920 - 414) * (600 - 300) + 300px);
   display: none !important;
 }
 
@@ -195,15 +192,19 @@
   .process_item {
     flex-direction: column;
     align-items: flex-start;
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 10px;
+    padding: 73px 37px 57px 27px;
+    gap: 24px;
+
 
   }
 
- .button_container {
-  flex-direction: column;
- }
+  .button_container {
+    flex-direction: column;
+  }
+
+  .spoiler {
+    margin-bottom: 16px;
+  }
 
 }
 

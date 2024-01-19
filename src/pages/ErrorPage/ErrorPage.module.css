@@ -1,9 +1,11 @@
 .main_container {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
+  padding-bottom: calc((100vw - 414px)/(1920 - 414) * (41 - 17) + 17px);
+  padding-top: calc((100vw - 414px)/(1920 - 414) * (41 - 0) + 0px);
+
 }
 
 .image {
-  width: calc((100vw - 320px)/(1920 - 320) * (695 - 320) + 320px);
+  width: calc((100vw - 414px)/(1920 - 414) * (695 - 320) + 320px);
 }

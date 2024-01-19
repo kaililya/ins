@@ -16,9 +16,8 @@ function FunctionPage() {
     <>
       <div className={styles2.background}>
       <p className={styles2.spoiler}>Funktionen</p>
-
-        <h2 className={styles.title}>Mehr als Excel – software as a service</h2>
-        <p className={styles.sub_title}>
+        <h2 className={`${styles.title} ${styles2.title}`}>Mehr als Excel – software as a service</h2>
+        <p className={`${styles.sub_title} ${styles2.sub_title}`}>
           Mit Compleon Solutions steuern Sie die Rechtspflichten, Maßnahmen und
           Verantwortlichkeiten in den Bereichen Energie, Umwelt- und
           Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher –
