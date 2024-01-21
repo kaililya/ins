@@ -107,7 +107,7 @@ function PriceTarif() {
                 </>
               )}
             </p>
-            {console.log(item.attributes.ButtonPrice.link)}
+            {/* {console.log(item.attributes.ButtonPrice.link)} */}
             <a 
               className={styles.button}
               href={item.attributes.ButtonPrice.link}

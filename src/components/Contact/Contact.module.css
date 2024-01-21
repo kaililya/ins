@@ -14,7 +14,7 @@
   font-family: Mont;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight:600;
   line-height: 26.1px; /* 145% */
   text-transform: uppercase;
   margin: 0 auto;
@@ -25,23 +25,23 @@
   color: #282882;  
   text-align: center;
   font-family: TestDomaineText;
-  font-size: calc((100vw - 320px)/(1920 - 320) * (55 - 32) + 32px);
+  font-size: calc((100vw - 414px)/(1920 - 414) * (55 - 32) + 32px);
   font-style: normal;
   font-weight: 800;
   line-height: 127.273%;
   margin: 0 auto;
   max-width: 580px;
-  margin-bottom: calc((100vw - 320px)/(1920 - 320) * (53 - 20) + 20px);
+  margin-bottom: calc((100vw - 414px)/(1920 - 414) * (53 - 20) + 20px);
 }
 
 .sub_title {
   font-family: Inter;
   color: #4E4E4E;
   text-align: center;
-  font-size: 18px;
+  font-size: calc((100vw - 414px)/(1920 - 414) * (18 - 12) + 12px);
   font-style: normal;
   font-weight: 400;
-  line-height: 26.1px; /* 145% */
+  line-height: 26.1px;
   margin: 0 auto;
   max-width: 600px;
 }
@@ -50,8 +50,8 @@
   padding: 0;
   list-style: none;
   display: flex;
-  gap: calc((100vw - 320px)/(1920 - 320) * (77 - 32) + 32px);
-  margin-top: calc((100vw - 320px)/(1920 - 320) * (64 - 50) + 50px);
+  gap: calc((100vw - 414px)/(1920 - 414) * (77 - 32) + 32px);
+  margin-top: calc((100vw - 414px)/(1920 - 414) * (64 - 50) + 50px);
 
 }
 
@@ -67,17 +67,17 @@
   color: #4E4E4E;
   text-align: center;
   font-family: TestDomaineText;
-  font-size: 18px;
+  font-size: calc((100vw - 414px)/(1920 - 414) * (18 - 12) + 12px);
   font-style: normal;
   font-weight: 700;
-  line-height: 26.1px; /* 145% */
+  line-height: 26.1px; 
   text-transform: uppercase;
 
 }
 
 .image_wrapper {
-  width: calc((100vw - 320px)/(1920 - 320) * (169 - 131) + 131px);
-  height: calc((100vw - 320px)/(1920 - 320) * (169 - 131) + 131px);
+  width: calc((100vw - 414px)/(1920 - 414) * (169 - 141) + 141px);
+  height: calc((100vw - 414px)/(1920 - 414) * (169 - 141) + 141px);
   overflow: hidden;
   border-radius: 50%;
 }
@@ -93,7 +93,7 @@
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: calc((100vw - 320px)/(1920 - 320) * (72 - 50) + 50px);
+  margin-top: calc((100vw - 414px)/(1920 - 414) * (72 - 50) + 50px);
   gap: 29px;
   list-style: none;
 }
