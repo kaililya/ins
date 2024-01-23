@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import styles from "./FormPage.module.css";
 import useForm from "../../hooks/useForm";
+import { Link } from "react-router-dom";
+import { datenschutzPATH } from "../../utils/constants";
 
 function FormPage() {
 
@@ -51,6 +53,11 @@ function FormPage() {
   return (
     <section className={styles.main_container}>
       <h2 className={styles.title}>Nehmen Sie per Formular Kontakt mit uns auf oder rufen Sie uns an</h2>
+      <div className={styles.button}>
+          <a href="tel:0309302981916" className={styles.link}>
+            T. 030 93 029 819 16
+          </a>
+      </div>
       <form className={styles.form} action="POST" onSubmit={hadleSubmit}>
         {inputsFormPage.map((input) => (
           <input
@@ -67,6 +74,10 @@ function FormPage() {
           placeholder="Ihre Mitteilung an uns"
           rows={9}
         />
+        <div className={styles.chekbox_container}>
+          <input type="checkbox" name="" id="" />
+          <p className={styles.checkbox__label}>Ja, ich stimme der <Link target="_blank" to={datenschutzPATH}>Datenschutzerklärung</Link> zu</p>       
+        </div>
         <button className={styles.button_contact}>Abschicken</button>
       </form>
       <p className={styles.request_meassage}>

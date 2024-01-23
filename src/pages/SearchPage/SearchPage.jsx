@@ -97,11 +97,10 @@ function SearchPage({ isSubTitle }) {
                 <h3 className={law?.link1 !== null ?  `${styles.link_major}` : `${styles.link_major__no_link}`}>{law.name}</h3>
                 <ul className={styles.link_column}>
                   <li className={styles.link}>
-                    <p className={styles.symbol}>{law.shortName}</p>
+                    {/* <p className={styles.symbol}>{law.shortName}</p> */}
                     {/* <p className={styles.paragraff}>
-                      
                     </p> */}
-                    <p className={styles.nested_link}>Link zur Norm</p>
+                    {/* <p className={styles.nested_link}>Link zur Norm</p> */}
                   </li>
                 </ul>
               </a>

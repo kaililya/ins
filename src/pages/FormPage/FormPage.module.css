@@ -66,6 +66,54 @@
   color: #4E4E4E;
 }
 
+
+.chekbox_container {
+  display: flex;
+  gap: 6px;
+}
+
+.checkbox__label {
+  font-weight: 500;
+}
+
+
+.button {
+  color: #4E4E4E;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 112.5%;
+  text-transform: uppercase;
+  border-radius: 46px;
+  width: 290px;
+  height: 75px;
+  border: 1px solid #434343;
+  margin: 0 auto;
+  transition: all .2s ease-out;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background: #282882;
+  color:  #fff;
+}
+
+.link {
+  margin: 28px 0;
+  text-decoration: none;
+  color: #4E4E4E;
+  height: 100%;
+  text-align: center;
+  display: block;
+}
+
+.button:hover .link {
+  color:  #fff;
+}
+
 .button_contact {
   /* font-family: Inter; */
   font-size: 16px;
@@ -73,7 +121,7 @@
   font-weight: 400;
   line-height: 145%;
   display: flex;
-  width: calc((100vw - 320px)/(1920 - 320) * (290 - 174) + 174px);
+  width: 290px;
   height: 75px;
   padding: 12px 25px 11.19px 25px;
   justify-content: center;
@@ -104,6 +152,8 @@
   text-align: center;
   margin-bottom: 64px;
 }
+
+
 
 @media (max-width: 900px) {
   .request_meassage {

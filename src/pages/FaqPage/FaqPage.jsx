@@ -106,16 +106,15 @@ function FaqPage() {
                   name="accordion"
                   id={item.id}
                 />
-                {/* {console.log(item.Content)} */}
                 <label 
                   className={styles.accordion_label}
                   htmlFor={item.id}
                 >
-                  {JSON.stringify(item.Question)}
+                  {item.Question}
                 </label>
                 <div className={styles.accordion_content}>
                   <p className={styles.accordion_text}>
-                   {JSON.stringify(item.Answer)}
+                   {item.Answer}
                   </p>
                 </div>
               </li>
