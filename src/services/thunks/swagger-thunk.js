@@ -1,5 +1,5 @@
-import { API_BASE_URL, getAccessToken, getArticles, getBeratung, getBeratungs, getPrice, getServices, getUniqueArticle, getWiki } from "../../utils/api";
-import { getArticlesRequest, getArticlesRequestFailed, getArticlesRequestSuccessed, getBeratungRequest, getBeratungRequestFailed, getBeratungRequestSuccess, getLawsRequest, getLawsRequestFailed, getLawsRequestSuccess, getPriceRequest, getPriceRequestFailed, getPriceRequestSuccess, getServiceRequest, getServiceRequestFailed, getServiceRequestSuccess, getUniqueArticlesRequest, getUniqueArticlesRequestFailed, getUniqueArticlesRequestSuccessed, getWikiRequest, getWikiRequestFailed, getWikiRequestSuccess } from "../slices/initialSlice";
+import { API_BASE_URL, getAccessToken, getArticles, getBeratung, getBeratungs, getFaq, getPrice, getServices, getUniqueArticle, getWiki } from "../../utils/api";
+import { getArticlesRequest, getArticlesRequestFailed, getArticlesRequestSuccessed, getBeratungRequest, getBeratungRequestFailed, getBeratungRequestSuccess, getFaqRequest, getFaqRequestFailed, getFaqRequestSuccess, getLawsRequest, getLawsRequestFailed, getLawsRequestSuccess, getPriceRequest, getPriceRequestFailed, getPriceRequestSuccess, getServiceRequest, getServiceRequestFailed, getServiceRequestSuccess, getUniqueArticlesRequest, getUniqueArticlesRequestFailed, getUniqueArticlesRequestSuccessed, getWikiRequest, getWikiRequestFailed, getWikiRequestSuccess } from "../slices/initialSlice";
 import axios from "axios";
 
 export const fetchGetArticlesThunk = () => async(dispatch) => {
@@ -46,6 +46,18 @@ export const fetchGetPriceThunk = () => async(dispatch) => {
   } catch ({ httpCode, message }) {
     const msg = httpCode ? message : 'Не удалось связаться с сервером';
     dispatch(getPriceRequestFailed(msg));
+  }
+}
+
+export const fetchGetFaqThunk = () => async(dispatch) => {
+  try {
+    dispatch(getFaqRequest());
+    const response = await getFaq();
+    // console.log(response.data.data);
+    dispatch(getFaqRequestSuccess(response.data.data));
+  } catch ({ httpCode, message }) {
+    const msg = httpCode ? message : 'Не удалось связаться с сервером';
+    dispatch(getFaqRequestFailed(msg));
   }
 }
 

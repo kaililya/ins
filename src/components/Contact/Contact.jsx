@@ -31,7 +31,11 @@ function Contact() {
         </li>
       </ul>
       <ul className={styles.button_container}>
-        <li className={styles.button}>Factsheet holen (PDF)</li>
+        <li className={styles.button}>
+          <a href="tel:0309302981916" className={styles.link}>
+          Factsheet holen (PDF)
+          </a>
+        </li>
         <li className={styles.button}>
           <a href="tel:0309302981916" className={styles.link}>
             T. 030 93 029 819 16

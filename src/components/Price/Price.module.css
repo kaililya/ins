@@ -15,7 +15,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26.1px; /* 145% */
+  line-height: 26.1px;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 9px;
@@ -47,11 +47,7 @@
 
 @media (max-width: 600px) {
   .main_container {
-    background: #79FF91;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 64px;
+    padding-top: 33px;
   }
 }

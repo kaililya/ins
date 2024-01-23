@@ -19,7 +19,7 @@ function Hello() {
       <ul className={styles.button_container}>
         <li>
           <NavLink to={kontaktPATH} className={styles.button_container_item}>
-            Demo Zugang Anfragen
+            Demoversion anfragen
           </NavLink>
         </li>
         <li>

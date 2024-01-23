@@ -8,6 +8,7 @@ const intitialState = {
   serviceData: [],
   wikiData: null,
   lawsData: [],
+  faqData: [],
   inputValue: null,
   isDerectedToSeachPage: false,
   getArticlesRequest: false,
@@ -31,6 +32,9 @@ const intitialState = {
   getLawsRequest: false,
   getLawsRequestSuccess: false,
   getLawsRequestFailed: false,
+  getFaqRequest: false,
+  getFaqRequestSuccess: false,
+  getFaqRequestFailed: false,
   error: null,
 }
 
@@ -160,11 +164,28 @@ export const swaggerDataSlice = createSlice({
     },
     getLawsRequestFailed(state) {
       state.getLawsRequest = false;
-      // state.lawsData = null;
       state.getLawsRequestSuccess = false; 
       state.getLawsRequestFailed = true; 
     },
 
+    getFaqRequest(state) {
+      state.getFaqRequest = true;
+      state.getFaqRequestSuccess = false; 
+      state.getFaqRequestFailed = false; 
+    },
+
+    getFaqRequestSuccess(state, action) {
+      state.getFaqRequest = false;
+      state.faqData = action.payload;
+      state.getFaqRequestSuccess = true; 
+      state.getFaqRequestFailed = false; 
+    },
+
+    getFaqRequestFailed(state) {
+      state.getFaqRequest = false;
+      state.getFaqRequestSuccess = false; 
+      state.getFaqRequestFailed = true; 
+    },
     setInputValueAction(state, action) {
       state.inputValue = action.payload;
     },
@@ -200,6 +221,9 @@ export const { getArticlesRequest,
   getLawsRequestFailed,
   setInputValueAction,
   setIsDerectedToSeachPage,
+  getFaqRequest,
+  getFaqRequestSuccess,
+  getFaqRequestFailed,
  } = swaggerDataSlice.actions;
 
 export default swaggerDataSlice.reducer

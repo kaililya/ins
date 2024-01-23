@@ -81,6 +81,14 @@ export const getWiki = () => {
   return axios.get(url, { headers });
 };
 
+export const getFaq = () => {
+  const url = 'https://admin.compleon-solutions.de/api/faq?populate[FAQData][populate]=Content';
+  const headers = {
+    'Content-Type': 'application/json',
+  };
+  return axios.get(url, { headers });
+};
+
 export const API_BASE_URL = "https://staging.compleon-solutions.de";
 export const CLIENT_ID = "O8o7nhK-UAbSBYdB3vcSRhx3wg__ztmK";
 export const CLIENT_SECRET =

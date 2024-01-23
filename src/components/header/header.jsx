@@ -8,7 +8,6 @@ import { articlesPATH, beratungPATH, faqPATH, funktionenPATH, kontaktPATH, proze
 const Header = () => {
 
   useEffect(() => {
-
     if (isSoftware) {
       setIsSoftware(false);
     }
@@ -27,6 +26,7 @@ const Header = () => {
     isActive ? `${styles.link_active} ${styles.link}` : `${styles.link}`;
 
   const [isBurger, setIsBurger] = useState(false);
+  const [isShouldRender, setIsShouldRender] = useState(false)
 
   const switchClassName = ({ isActive }) =>
     isActive ? `${styles.link_active} ${styles.link}` : `${styles.link}`;
@@ -56,11 +56,13 @@ const Header = () => {
   };
 
   const handleRoute = () => {
-    console.log('роутинг');
+    setIsShouldRender(prev => !prev)
     if (isBurger) {
       setIsBurger(false);  
     } 
   };
+
+
   
   return (
     <header
@@ -68,7 +70,7 @@ const Header = () => {
     >
       <div
         className={
-          pathname === "/"
+          (pathname === "/" || pathname === "/faq")
             ? `${styles.header_wrapper_main}`
             : `${styles.header_wrapper}`
         }
@@ -209,7 +211,7 @@ const Header = () => {
                       className={styles.header__link}
                       onClick={handleRoute}
                     >
-                      Prozessdd
+                      Prozess
                     </NavLink>
                   </li>
                   <li className={styles.header__list}>

@@ -19,7 +19,7 @@
   max-width: 1470px;
   margin: 0 auto;
   padding: 0 16px;
-  /* padding-bottom: 29px; */
+  padding-bottom: 20px;
   padding-top: calc((100vw - 414px)/(1920 - 414) * (40 - 33) + 33px);
   box-sizing: border-box;
   display: flex;

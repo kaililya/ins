@@ -69,8 +69,10 @@ function PriceTarif() {
         </div>
       )}
       <ul className={styles.tarif_container}>
-        {priceData.map((item) => (
-          <li key={item.attributes.id} className={styles.tarif_item}>
+        {priceData.map((item, id) => (
+          <li key={item.id}
+            style={{border: id === 1 ? '1px solid #EC5E43' : ''}}
+            className={styles.tarif_item}>
             <h2 className={styles.title}>
               {item.attributes.Title}
             </h2>
@@ -107,9 +109,8 @@ function PriceTarif() {
                 </>
               )}
             </p>
-            {/* {console.log(item.attributes.ButtonPrice.link)} */}
             <a 
-              className={styles.button}
+              className={item.id === 2 ? `${styles.button} ${styles.button__special}` : `${styles.button}`}
               href={item.attributes.ButtonPrice.link}
               target="_blank"
             >{item.attributes.ButtonPrice.Title}</a>
@@ -129,15 +130,19 @@ function PriceTarif() {
         direction={"horizontal"}
         slidesPerView={countOfReview}
         spaceBetween={10}
+        initialSlide={1} // Установите индекс второго слайда (индексы начинаются с 0)
         pagination={{
           clickable: true,
         }}
         modules={[Pagination]}
         className={`mySwiper ${styles.wrapper}`}
       >
-        {priceData.map((item) => (
+        {priceData.map((item,id) => (
          <SwiperSlide key={item.attributes.id} className={styles.swiper_slide}>
-          <div key={item.attributes.id} className={`${styles.tarif_item} ${styles.tarif_item__mobile}`}>
+          <div             
+            style={{border: id === 1 ? '1px solid #EC5E43' : ''}}
+            key={item.attributes.id} 
+            className={`${styles.tarif_item} ${styles.tarif_item__mobile}`}>
             <h2 className={styles.title}>
               {item.attributes.Title}
             </h2>
@@ -174,10 +179,10 @@ function PriceTarif() {
                 </>
               )}
             </p>
-            {/* {console.log(item.attributes.ButtonPrice)} */}
+            {console.log(item.id)}
             {!item.attributes.ButtonPrice.isExternal ? (
              <a 
-               className={styles.button}
+               className={id === 1 ? `${styles.button} ${styles.button__special}` : `${styles.button}`}
                href={item.attributes.ButtonPrice.link}
                target="_blank"
              >
@@ -185,7 +190,7 @@ function PriceTarif() {
             </a>
             ) : (
               <NavLink
-               className={styles.button}
+              className={id === 1 ? `${styles.button} ${styles.button__special}` : `${styles.button}`}
                to={item.attributes.ButtonPrice.link}>
               {item.attributes.ButtonPrice.Title}
               </NavLink>

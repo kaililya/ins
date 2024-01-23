@@ -59,7 +59,7 @@ function News() {
         breakpoints={{
           963: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 24,
           },
           960: {
             slidesPerView: 1,
@@ -79,7 +79,7 @@ function News() {
       >
         {articlesData.data.map((article) => (
           <SwiperSlide className={styles.slide}>
-                   <article className={styles.new_container}>
+        <article className={styles.new_container}>
          <div className={styles.new_container_text_column}>
            <p className={styles.new_date}>
              {article.attributes.Category} |{" "}
@@ -105,7 +105,7 @@ function News() {
              />
            </div>
          </article>
-          </SwiperSlide>
+        </SwiperSlide>
         ))}
 
 

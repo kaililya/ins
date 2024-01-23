@@ -13,18 +13,18 @@ function MainPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []); 
-
+// попрааить Function
   return (
-    <main>
+    <>
       <Hello />
-      <Function />
+      <Function /> 
       <Input isSubTitle={true} />
       <Process />
-      <Price  />
+      <Price />
       <PriceTarif />
       <News /> 
       <Contact />
-    </main>
+    </>
   )
 }
 

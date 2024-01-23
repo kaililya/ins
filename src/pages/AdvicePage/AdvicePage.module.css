@@ -139,7 +139,8 @@
   font-weight: 500;
   line-height: 29px;
   text-transform: uppercase;
-  word-break: break-all;
+  /* word-break: break-all; */
+  /* white-space: pre-line; */
   margin: 0;
 
 }
