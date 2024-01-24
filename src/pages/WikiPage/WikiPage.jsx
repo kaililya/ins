@@ -31,8 +31,21 @@ const WikiPage = () => {
     getWikiRequestFailed} =
     useSelector((store) => store.swaggerDataReducer);
 
+  console.log(getWikiRequestFailed, wikiData.length === 0);
+
+  if (getWikiRequestFailed) {
+    return (<div className={styles.failed_container}>
+      <BiSolidError className={styles.error_sign} size={80} />
+      <h3
+        className={`${styles.advice_title} ${styles.advice_title__warning}`}
+      >
+       Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
+      </h3>
+    </div>)
+  }
+
   if (!wikiData || wikiData.length === 0) {
-    return  (
+    return (
       <div className={styles.spiner}>
         <TailSpin
           color="#292982"
@@ -45,19 +58,9 @@ const WikiPage = () => {
     )
   }
 
+
   return (
-    <section className={styles.wiki}>
-      {!getWikiRequest &&
-       (getWikiRequestFailed || wikiData.length === 0) && (
-          <div className={styles.failed_container}>
-            <BiSolidError className={styles.error_sign} size={80} />
-            <h3
-              className={`${styles.advice_title} ${styles.advice_title__warning}`}
-            >
-             Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
-            </h3>
-          </div>
-        )}
+    <section className={styles.wiki}>  
       <div className={styles.wiki_container}>
         {wikiData.data.attributes.Categories.map((item) => (
           <Fragment key={item.id}>

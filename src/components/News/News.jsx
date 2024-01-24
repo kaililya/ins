@@ -23,9 +23,23 @@ function News() {
 
   const articlesData =
     useSelector((store) => store.swaggerDataReducer.articlesData) || [];
-  const { getArticlesRequest, getArticlesRequestSuccess, getArticlesRequestRequestFailed } =
+  const { getArticlesRequest, getArticlesRequestSuccess, getArticlesRequestFailed } =
     useSelector((store) => store.swaggerDataReducer);
-  if (!articlesData || articlesData === null || articlesData === undefined || articlesData.length  === 0) {
+
+    if (getArticlesRequestFailed) {
+      return (
+      <div className={styles.failed_container}>
+        <BiSolidError className={styles.error_sign} size={80} />
+        <h3
+          className={`${styles.advice_title} ${styles.advice_title__warning}`}
+        >
+         Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
+        </h3>
+      </div>)
+    }
+
+
+  if (!articlesData || articlesData.length  === 0) {
     return (
       <div className={styles.spiner}>
         <TailSpin
@@ -42,16 +56,7 @@ function News() {
   return (
     <section className={styles.main_container}>
       <h2 className={styles.title}>Nachrichten</h2>
-      {!getArticlesRequest &&
-        (getArticlesRequestRequestFailed || articlesData.length === 0) && (
-          <div className={styles.failed_container}>
-            <BiSolidError className={styles.error_sign} size={80} />
-            <h3
-              className={`${styles.advice_title} ${styles.advice_title__warning}`}
-            >
-            Die Nachrichten konnten nicht heruntergeladen werden . Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.            </h3>
-          </div>
-        )}
+     
       {/* {getArticlesRequest && (
         <div className={styles.spiner}>
           <TailSpin

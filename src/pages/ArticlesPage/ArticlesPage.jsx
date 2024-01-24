@@ -23,8 +23,21 @@ const ArticlesPage = () => {
 
   const articlesData =
     useSelector((store) => store.swaggerDataReducer.articlesData) || [];
-  const { getArticlesRequest, getArticlesRequestRequestFailed } =
+  const { getArticlesRequest, getArticlesRequestFailed } =
     useSelector((store) => store.swaggerDataReducer);
+
+  if (getArticlesRequestFailed) {
+    return (
+    <div className={styles.failed_container}>
+      <BiSolidError className={styles.error_sign} size={80} />
+      <h3
+        className={`${styles.advice_title} ${styles.advice_title__warning}`}
+      >
+       Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
+      </h3>
+    </div>)
+  }
+  
 
   if (!articlesData || articlesData.length === 0) {
     return (
@@ -99,27 +112,6 @@ const ArticlesPage = () => {
 
   return (
     <section className={styles.articles}>
-      {!getArticlesRequest &&
-        (getArticlesRequestRequestFailed || articlesData.length === 0) && (
-          <div className={styles.failed_container}>
-            <BiSolidError className={styles.error_sign} size={80} />
-            <h3
-              className={`${styles.advice_title} ${styles.advice_title__warning}`}
-            >
-            Die Nachrichten konnten nicht heruntergeladen werden . Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.            </h3>
-          </div>
-        )}
-      {/* {getArticlesRequest  && (
-        <div className={styles.spiner}>
-          <TailSpin
-            color="#292982"
-            radius={"3px"}
-            width={100}
-            height={100}
-            wrapperClass={styles.spiner}
-          />
-        </div>
-      )} */}
       <div className={styles.articles_container}>
         <div className={styles.articles_aside}>
           <Swiper

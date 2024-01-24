@@ -46,7 +46,19 @@ function FunctionSlider() {
   const handleNextMobile = () => {
     swiperRefMobile?.slideNext();
   };
-
+  
+  if (getServiceRequestFailed) {
+    return (
+    <div className={styles.failed_container}>
+      <BiSolidError className={styles.error_sign} size={80} />
+      <h3
+        className={`${styles.advice_title} ${styles.advice_title__warning}`}
+      >
+       Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
+      </h3>
+    </div>)
+  }
+  
   if (!serviceData || serviceData.length === 0) {
     return (<div className={styles.spiner}>
       <TailSpin
@@ -59,26 +71,10 @@ function FunctionSlider() {
     </div>)
   }
 
-  // console.log(serviceData[0].attributes.Image.data.attributes.url);
-  // console.log(serviceData);
-
-
-
   return (
     <div>
       <div className={styles.swiper_wrapper}>
-        {!getServiceRequest &&
-          (getServiceRequestFailed || serviceData.length === 0) && (
-            <div className={styles.failed_container}>
-              <BiSolidError className={styles.error_sign} size={80} />
-              <h3
-                className={`${styles.advice_title} ${styles.advice_title__warning}`}
-              >
-                Tipps konnten nicht geladen funktionen. Versuchen Sie es neu
-                zuladen oder besuchen Sie diese Seite später.
-              </h3>
-            </div>
-          )}
+        
         {/* {getServiceRequest && (
           <div className={styles.spiner}>
             <TailSpin

@@ -41,8 +41,18 @@ function FaqPage() {
   )
 
   const [activeTab, setActiveTab] = useState('');
-  console.log(activeTab);
 
+  if (getFaqRequestFailed) {
+    return (
+    <div className={styles.failed_container}>
+      <BiSolidError className={styles.error_sign} size={80} />
+      <h3
+        className={`${styles.advice_title} ${styles.advice_title__warning}`}
+      >
+       Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
+      </h3>
+    </div>)
+  }
 
   if (!faqData || faqData.length === 0) {
     return  (
