@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useMemo, useState } from "react";
+  import React, { Fragment, useEffect, useMemo, useState } from "react";
 import WikiContent from "../../components/WikiContent/WikiContent";
 import styles from "./WikiPage.module.css";
 import { useDispatch, useSelector } from "react-redux";

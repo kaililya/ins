@@ -1,7 +1,7 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./FunctionSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Pagination } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
 import { useDispatch, useSelector } from "react-redux";
@@ -48,7 +48,15 @@ function FunctionSlider() {
   };
 
   if (!serviceData || serviceData.length === 0) {
-    return null
+    return (<div className={styles.spiner}>
+      <TailSpin
+        color="#292982"
+        radius={"3px"}
+        width={100}
+        height={100}
+        wrapperClass={styles.spiner}
+      />
+    </div>)
   }
 
   // console.log(serviceData[0].attributes.Image.data.attributes.url);
@@ -71,7 +79,7 @@ function FunctionSlider() {
               </h3>
             </div>
           )}
-        {getServiceRequest && (
+        {/* {getServiceRequest && (
           <div className={styles.spiner}>
             <TailSpin
               color="#292982"
@@ -81,7 +89,7 @@ function FunctionSlider() {
               wrapperClass={styles.spiner}
             />
           </div>
-        )}
+        )} */}
         <div className={styles.swipper_wrapper}>
           <img
             onClick={handlePrevious}

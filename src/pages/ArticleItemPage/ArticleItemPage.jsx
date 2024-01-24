@@ -34,7 +34,17 @@ function ArticleItemPage() {
     uniqueArticleData === undefined ||
     uniqueArticleData.length === 0
   ) {
-    return null;
+    return (
+      <div className={styles.spiner}>
+        <TailSpin
+          color="#292982"
+          radius={'3px'}
+          width={100}
+          height={100}
+          wrapperClass={styles.spiner}
+        />
+      </div>
+    );
   }
 
   return (
@@ -49,7 +59,7 @@ function ArticleItemPage() {
             </h3>
           </div>
         )}
-      {getUniqueArticlesRequest && (
+      {/* {getUniqueArticlesRequest && (
         <div className={styles.spiner}>
           <TailSpin
             color="#292982"
@@ -59,7 +69,7 @@ function ArticleItemPage() {
             wrapperClass={styles.spiner}
           />
         </div>
-      )}
+      )} */}
       <article className={styles.new_container}>
         <div className={styles.new_container_text_column}>
           <p className={styles.new_date}>

@@ -26,7 +26,17 @@ function News() {
   const { getArticlesRequest, getArticlesRequestSuccess, getArticlesRequestRequestFailed } =
     useSelector((store) => store.swaggerDataReducer);
   if (!articlesData || articlesData === null || articlesData === undefined || articlesData.length  === 0) {
-    return null
+    return (
+      <div className={styles.spiner}>
+        <TailSpin
+          color="#292982"
+          radius={"3px"}
+          width={100}
+          height={100}
+          wrapperClass={styles.spiner}
+        />
+      </div>
+    )
   }
   
   return (
@@ -42,7 +52,7 @@ function News() {
             Die Nachrichten konnten nicht heruntergeladen werden . Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.            </h3>
           </div>
         )}
-      {getArticlesRequest && (
+      {/* {getArticlesRequest && (
         <div className={styles.spiner}>
           <TailSpin
             color="#292982"
@@ -52,7 +62,7 @@ function News() {
             wrapperClass={styles.spiner}
           />
         </div>
-      )}
+      )} */}
       <Swiper
         direction={"horizontal"}
         slidesPerView={2}

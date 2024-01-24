@@ -10,7 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchGetPriceThunk } from "../../services/thunks/swagger-thunk";
 import { TailSpin } from "react-loader-spinner";
 import { BiSolidError } from "react-icons/bi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 function PriceTarif() {
   const dispatch = useDispatch();
@@ -31,7 +31,7 @@ function PriceTarif() {
   }, []);
 
   const countOfReview = useMemo(() => {
-    if (windowWidth <= 620) {
+    if (windowWidth <= 680) {
       return 1;
     } else {
       return 2;
@@ -44,8 +44,19 @@ function PriceTarif() {
   const priceData =
     useSelector((store) => store.swaggerDataReducer.priceData) || [];
 
+  const {pathname} = useLocation();
+  console.log(pathname);
+
+  
   return (
-    <section className={styles.main_container}>
+    <section
+    className={
+      (pathname === "/function")
+        ? `${styles.main_container__function}`
+        : `${styles.main_container}`
+    }
+    // className={styles.main_container}
+    >
       {!getPriceRequest &&
        (getPriceRequestFailed || priceData.length === 0) && (
           <div className={styles.failed_container}>
@@ -126,11 +137,11 @@ function PriceTarif() {
           </li>
         ))}
       </ul> 
-      <Swiper
+      <Swiper 
         direction={"horizontal"}
         slidesPerView={countOfReview}
         spaceBetween={10}
-        initialSlide={1} // Установите индекс второго слайда (индексы начинаются с 0)
+        initialSlide={1} 
         pagination={{
           clickable: true,
         }}
@@ -166,7 +177,6 @@ function PriceTarif() {
             </ul>
             <p className={styles.price}>
               {item.attributes.Price === '0' ? (
-              // <span className={styles.price_value}>
               <>
                {item.attributes.ButtonSubtitle}
               </>

@@ -100,7 +100,7 @@
 .input::placeholder {
   color: #282882;
   font-family: Mont;
-  font-size: calc((100vw - 320px)/(1920 - 320) * (14 - 11) + 11px);
+  font-size: calc((100vw - 414px)/(1920 - 414) * (14 - 11) + 11px);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -115,12 +115,12 @@
   margin-left: auto;
   display: block;
   font-family: Mont;
-  font-size: calc((100vw - 320px)/(1920 - 320) * (16 - 12) + 12px);
+  font-size: calc((100vw - 414px)/(1920 - 414) * (16 - 12) + 12px);
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
   display: flex;
-  width: calc((100vw - 320px)/(1920 - 320) * (172 - 125) + 145px);
+  width: calc((100vw - 414px)/(1920 - 414) * (172 - 125) + 145px);
   height: 42px;
   padding: 12px 25px 12px 25px;
   justify-content: center;
@@ -320,7 +320,6 @@
 
 .links_container_columns:hover .nested_link {
   text-decoration-line: underline;
-
 }
 
 .links_container_columns:hover ul {

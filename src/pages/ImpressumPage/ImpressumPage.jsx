@@ -22,7 +22,10 @@ const ImpressumPage = () => {
             <h6 className={styles.imprint_title}>Betreiber und Kontakt:</h6>
             <div className={styles.imprint_inner}>
               <p className={styles.imprint_subtitle}>
-                Umwelt- und Unternehmensberatung Schwan GmbH (UUB)
+                Umwelt- und Unternehmensberatung 
+              </p>
+              <p className={styles.imprint_subtitle}>
+                Schwan GmbH (UUB)
               </p>
             </div>
             <div className={styles.imprint_inner}>
@@ -62,7 +65,10 @@ const ImpressumPage = () => {
             </div>
             <div className={styles.imprint_inner}>
               <p className={styles.imprint_subtitle}>
-                Berufshaftlichtversicherung: Wir sind bei der folgender Versicherung
+                Berufshaftlichtversicherung:
+              </p>
+              <p className={styles.imprint_subtitle}>
+                Wir sind bei der folgender Versicherung
                 berufshaftpflichtversichert: HDI Versicherung AG Neumarkt 15 66117 Saarbrücken
                 Berufshaftlicht gültig für (Land): Deutschland
               </p>

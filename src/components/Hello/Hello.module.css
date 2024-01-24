@@ -74,7 +74,7 @@
   max-height: 641px;
   position: relative;
   /* bottom: 80px; */
-  left: calc((100vw - 320px)/(1920 - 320) * (70 - 36) + 36px);
+  left: calc((100vw - 414px)/(1920 - 414) * (70 - 36) + 36px);
 }
 .image {
   width: 100%;

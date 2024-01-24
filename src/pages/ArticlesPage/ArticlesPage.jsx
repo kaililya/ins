@@ -23,11 +23,21 @@ const ArticlesPage = () => {
 
   const articlesData =
     useSelector((store) => store.swaggerDataReducer.articlesData) || [];
-  const { getArticlesRequest, getArticlesRequestSuccess, getArticlesRequestRequestFailed } =
+  const { getArticlesRequest, getArticlesRequestRequestFailed } =
     useSelector((store) => store.swaggerDataReducer);
 
   if (!articlesData || articlesData.length === 0) {
-    return null;
+    return (
+      <div className={styles.spiner}>
+        <TailSpin
+          color="#292982"
+          radius={"3px"}
+          width={100}
+          height={100}
+          wrapperClass={styles.spiner}
+        />
+      </div>
+    );
   }
 
   const lastArticle = articlesData.data[articlesData.data.length - 1];
@@ -46,6 +56,7 @@ const ArticlesPage = () => {
   const articlesDataPopLast = [...articlesData.data].slice(0, articlesData.data.length - 1)
 
   const twoDArrayArticlesData = create2DArray(articlesDataPopLast);
+
 
   const sliderContent = () => {
     const sliders = [];
@@ -98,7 +109,7 @@ const ArticlesPage = () => {
             Die Nachrichten konnten nicht heruntergeladen werden . Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.            </h3>
           </div>
         )}
-      {getArticlesRequest  && (
+      {/* {getArticlesRequest  && (
         <div className={styles.spiner}>
           <TailSpin
             color="#292982"
@@ -108,7 +119,7 @@ const ArticlesPage = () => {
             wrapperClass={styles.spiner}
           />
         </div>
-      )}
+      )} */}
       <div className={styles.articles_container}>
         <div className={styles.articles_aside}>
           <Swiper

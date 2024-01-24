@@ -2,7 +2,7 @@
 	padding: 0 16px;
 	box-sizing: border-box;
 	margin: 0 auto;
-	padding-top: calc((100vw - 414px) / (1920 - 414) * (40 - 20) + 20px);
+	padding-top: calc((100vw - 414px) / (1920 - 414) * (60 - 20) + 20px);
 	padding-bottom: calc((100vw - 414px) / (1920 - 414) * (112 - 40) + 40px);
 	box-sizing: border-box;
 	max-width: 1438px;
@@ -30,6 +30,7 @@
 .spiner {
 	margin: 0 auto;
 	max-width: 100px;
+  margin-top: 200px;
 }
 
 .new_container {

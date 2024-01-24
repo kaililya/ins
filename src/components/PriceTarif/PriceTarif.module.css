@@ -1,5 +1,13 @@
 .main_container {
-  max-width: 1340px;
+  max-width: 1287px;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-bottom: calc((100vw - 414px)/(1920 - 414) * (108 - 50) + 50px);
+  padding-top: calc((100vw - 414px)/(1920 - 414) * (40 - 30) + 30px);
+}
+
+.main_container__function {
+  max-width: 1287px;
   margin: 0 auto;
   padding: 0 16px;
   padding-bottom: calc((100vw - 414px)/(1920 - 414) * (108 - 50) + 50px);
@@ -15,17 +23,16 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  gap:  calc((100vw - 414px)/(1920 - 414) * (40 - 20) + 20px);
+  /* gap:  calc((100vw - 414px)/(1920 - 414) * (40 - 20) + 20px); */
   height: auto;
 }
 
 .swiper_slide {
   height: auto !important;
-
-
 }
 
 .tarif_item {
+  /* width: 33%; */
   max-width: 387px;
   flex: 1 1 387px;
   border-radius: 20px;
@@ -222,6 +229,12 @@
 
 .advice_title {
   text-align: center;
+}
+
+@media (max-width:1260px) {
+  .tarif_container {
+    gap:  calc((100vw - 414px)/(1920 - 414) * (30 - 20) + 20px);
+  }
 }
 
 

@@ -69,11 +69,7 @@ const Header = () => {
       className={isBurger ? `${styles.header_burger}` : `${styles.header}`}
     >
       <div
-        className={
-          (pathname === "/" || pathname === "/faq")
-            ? `${styles.header_wrapper_main}`
-            : `${styles.header_wrapper}`
-        }
+        className={`${styles.header_wrapper}`}
       >
         <NavLink
           aria-label="link to main page"

@@ -1,6 +1,7 @@
 
 .main_section {
-  padding-bottom: calc((100vw - 414px)/(1920 - 414) * (131 - 30) + 30px);
+  padding-bottom: calc((100vw - 414px)/(1920 - 414) * (164 - 30) + 30px);
+  /* height: calc(100vh - 260px - 148px); */
 }
 
 .main_container {

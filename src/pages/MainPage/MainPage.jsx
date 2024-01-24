@@ -13,7 +13,7 @@ function MainPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []); 
-// попрааить Function
+
   return (
     <>
       <Hello />

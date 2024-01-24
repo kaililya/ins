@@ -70,13 +70,13 @@ function ProccesPage() {
             </p>
           </li>
         </ul>
-        <ul className={styles.button_container}>
-          <li className={styles.button_container_item}>
+        <div className={styles.button_container}>
+          {/* <li className={styles.button_container_item}> */}
             <NavLink to={"/beratung"} className={styles.link}>
               Service-Leistungen
             </NavLink>
-          </li>
-        </ul>
+          {/* </li> */}
+        </div>
       </section>
     </>
   );

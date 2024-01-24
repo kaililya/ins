@@ -1,10 +1,12 @@
 .imprint {
-	padding-bottom: 110px;
+	padding-bottom: calc((100vw - 414px) / (1920 - 414) * (115 - 76) + 76px);
+  padding-top: calc((100vw - 414px) / (1920 - 414) * (88 - 18) + 18px);
+
 }
 
 .imprint_container {
 	max-width: 1470px;
-	padding: 0 15px;
+	padding: 0 16px;
 	margin: 0 auto;
 }
 
@@ -97,6 +99,15 @@
 		padding: 0;
 		border-bottom: 1px solid #dfdfdf;
 		padding-bottom: 30px;
+	}
+
+ 
+	.imprint_item:nth-child(6) {
+    border: 0;
+	}
+
+  .imprint_item:nth-child(3) {
+    border: 0;
 	}
 
 	.imprint_item:not(:last-child):after {

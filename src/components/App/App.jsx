@@ -1,6 +1,5 @@
-import './App.css';
 import Footer from '../Footer/Footer';
-import styles from './App.css'
+import styles from './App.module.css'
 import { Route, Routes } from 'react-router-dom';
 import FunctionPage from '../../pages/FunctionPage/FunctionPage';
 import MainPage from '../../pages/MainPage/MainPage';
