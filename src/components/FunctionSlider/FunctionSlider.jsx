@@ -54,7 +54,7 @@ function FunctionSlider() {
       <h3
         className={`${styles.advice_title} ${styles.advice_title__warning}`}
       >
-       Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
+       Das Karussell konnte nicht geladen werden. Versuchen Sie es neu zuladen oder besuchen Sie diese Seite später.
       </h3>
     </div>)
   }

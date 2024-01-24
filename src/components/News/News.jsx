@@ -33,8 +33,7 @@ function News() {
         <h3
           className={`${styles.advice_title} ${styles.advice_title__warning}`}
         >
-         Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
-        </h3>
+Die Nachrichten konnten nicht heruntergeladen werden. Versuchen Sie, neu zu starten oder besuchen Sie diese Seite später.  </h3>
       </div>)
     }
 

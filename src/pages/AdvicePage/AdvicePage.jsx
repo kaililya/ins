@@ -56,8 +56,7 @@ function AdvicePage() {
               <h3
                 className={`${styles.advice_title} ${styles.advice_title__warning}`}
               >
-                Tipps konnten nicht geladen werden. Versuchen Sie es neu zu
-                laden oder besuchen Sie diese Seite später.
+                Die BERATUNG konnte nicht geladen werden. Versuchen Sie, neu zu starten oder besuchen Sie diese Seite später.
               </h3>
             </div>
           )}

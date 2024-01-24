@@ -39,7 +39,7 @@ const WikiPage = () => {
       <h3
         className={`${styles.advice_title} ${styles.advice_title__warning}`}
       >
-       Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
+        Das Wiki konnte nicht geladen werden. Versuchen Sie, neu zu starten oder besuchen Sie diese Seite später.
       </h3>
     </div>)
   }
