@@ -20,6 +20,7 @@ function FormPage() {
 
   const hadleSubmit = (e) => {
     e.preventDefault();
+    console.log('value');
     // dispatch(fetchLoginThunk(userData.email,  userData.password));
   };
 
@@ -38,7 +39,9 @@ function FormPage() {
     },
     {
       name: "phone",
-      type: "tel",
+      pattern:"[0-9+\\-]*" ,
+      title:`Sie können Zahlen und Symbole "-" und "+" verwenden`,
+      type: "text",
       placeholder: "Telefonnnummer",
       required: true,
     },
@@ -61,6 +64,7 @@ function FormPage() {
       <form className={styles.form} action="POST" onSubmit={hadleSubmit}>
         {inputsFormPage.map((input) => (
           <input
+            key={input.name}
             className={styles.input}
             onChange={hadleChangeUserData}
             value={userData[input.name]}
@@ -75,7 +79,7 @@ function FormPage() {
           rows={9}
         />
         <div className={styles.chekbox_container}>
-          <input type="checkbox" name="" id="" />
+          <input required type="checkbox" name="" id="" />
           <p className={styles.checkbox__label}>Ja, ich stimme der <Link target="_blank" to={datenschutzPATH}>Datenschutzerklärung</Link> zu</p>       
         </div>
         <button className={styles.button_contact}>Abschicken</button>
