@@ -41,8 +41,9 @@ function AdvicePage() {
           </p>
         </div>
         <h3 className={styles.title_second}>
-          Software plus Beratung – ma<span className={`${styles.title_second} ${styles.title_second__no_uper}`}>&szlig;</span>geschneidert und akkurat.
+          SOFTWARE PLUS BERATUNG - MASSGESCHNEIDERT UND AKKURAT.
         </h3>
+        {/* <span className={`${styles.title_second} ${styles.title_second__no_uper}`}>SS</span> */}
         <p className={styles.sub_title_second}>
           Mit unserer Beratung sind Sie jederzeit auf der sicheren Seite. Wir
           sorgen für Entlastung und Effizienz durch unsere jahrelange Erfahrung.
