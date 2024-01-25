@@ -9,6 +9,7 @@ import { fetchGetServiceThunk } from "../../services/thunks/swagger-thunk";
 import { TailSpin } from "react-loader-spinner";
 import { BiSolidError } from "react-icons/bi";
 import arrorImg from '../../image/icon_left.png' 
+import tempImage from '../../image/Vector (2).png'
 
 function FunctionSlider() {
   const dispatch = useDispatch();
@@ -74,18 +75,6 @@ function FunctionSlider() {
   return (
     <div>
       <div className={styles.swiper_wrapper}>
-        
-        {/* {getServiceRequest && (
-          <div className={styles.spiner}>
-            <TailSpin
-              color="#292982"
-              radius={"3px"}
-              width={100}
-              height={100}
-              wrapperClass={styles.spiner}
-            />
-          </div>
-        )} */}
         <div className={styles.swipper_wrapper}>
           <img
             onClick={handlePrevious}
@@ -164,6 +153,7 @@ function FunctionSlider() {
               </div>
             </SwiperSlide>
           ))}
+            
         </Swiper>
         <img
             onClick={handleNextMobile}
@@ -176,3 +166,177 @@ function FunctionSlider() {
 }
 
 export default FunctionSlider;
+
+
+
+{/* <SwiperSlide className={styles.slider} >
+<div
+  className={`${styles.function_item__swiper} ${styles.function_item__swiper_desktop}`}
+>
+  <img
+    className={styles.function_item_image}
+    src={tempImage}
+    alt="icon"
+  />
+  <h3 className={styles.function_item_title}>
+    Digitales Rechtskataster
+  </h3>
+  <p className={styles.function_item_sub_title}>
+  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+  </p>
+</div>
+</SwiperSlide>
+<SwiperSlide className={styles.slider} >
+<div
+  className={`${styles.function_item__swiper} ${styles.function_item__swiper_desktop}`}
+>
+  <img
+    className={styles.function_item_image}
+    src={tempImage}
+    alt="icon"
+  />
+  <h3 className={styles.function_item_title}>
+    Digitales Rechtskataster
+  </h3>
+  <p className={styles.function_item_sub_title}>
+  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+  </p>
+</div>
+</SwiperSlide>
+<SwiperSlide className={styles.slider} >
+<div
+  className={`${styles.function_item__swiper} ${styles.function_item__swiper_desktop}`}
+>
+  <img
+    className={styles.function_item_image}
+    src={tempImage}
+    alt="icon"
+  />
+  <h3 className={styles.function_item_title}>
+    Digitales Rechtskataster
+  </h3>
+  <p className={styles.function_item_sub_title}>
+  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+  </p>
+</div>
+</SwiperSlide>
+<SwiperSlide className={styles.slider} >
+<div
+  className={`${styles.function_item__swiper} ${styles.function_item__swiper_desktop}`}
+>
+  <img
+    className={styles.function_item_image}
+    src={tempImage}
+    alt="icon"
+  />
+  <h3 className={styles.function_item_title}>
+    Digitales Rechtskataster
+  </h3>
+  <p className={styles.function_item_sub_title}>
+  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+  </p>
+</div>
+</SwiperSlide>
+<SwiperSlide className={styles.slider} >
+<div
+  className={`${styles.function_item__swiper} ${styles.function_item__swiper_desktop}`}
+>
+  <img
+    className={styles.function_item_image}
+    src={tempImage}
+    alt="icon"
+  />
+  <h3 className={styles.function_item_title}>
+    Digitales Rechtskataster
+  </h3>
+  <p className={styles.function_item_sub_title}>
+  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+  </p>
+</div>
+</SwiperSlide>
+<SwiperSlide className={styles.slider} >
+<div
+  className={`${styles.function_item__swiper} ${styles.function_item__swiper_desktop}`}
+>
+  <img
+    className={styles.function_item_image}
+    src={tempImage}
+    alt="icon"
+  />
+  <h3 className={styles.function_item_title}>
+    Digitales Rechtskataster
+  </h3>
+  <p className={styles.function_item_sub_title}>
+  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+  </p>
+</div>
+</SwiperSlide>
+<SwiperSlide className={styles.slider} >
+<div
+  className={`${styles.function_item__swiper} ${styles.function_item__swiper_desktop}`}
+>
+  <img
+    className={styles.function_item_image}
+    src={tempImage}
+    alt="icon"
+  />
+  <h3 className={styles.function_item_title}>
+    Digitales Rechtskataster
+  </h3>
+  <p className={styles.function_item_sub_title}>
+  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+  </p>
+</div>
+</SwiperSlide> */}
+
+
+
+
+
+
+
+{/* <SwiperSlide className={styles.slider_mobile} >
+              <div className={`${styles.function_item__swiper}`}>
+                <img
+                  className={styles.function_item_image}
+                  src={tempImage}
+                  alt="icon"
+                />
+                <h3 className={styles.function_item_title}>
+                  Digitales Rechtskataster
+                </h3>
+                <p className={styles.function_item_sub_title}>
+                  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.slider_mobile} >
+              <div className={`${styles.function_item__swiper}`}>
+                <img
+                  className={styles.function_item_image}
+                  src={tempImage}
+                  alt="icon"
+                />
+                <h3 className={styles.function_item_title}>
+                  Digitales Rechtskataster
+                </h3>
+                <p className={styles.function_item_sub_title}>
+                  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+                </p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.slider_mobile} >
+              <div className={`${styles.function_item__swiper}`}>
+                <img
+                  className={styles.function_item_image}
+                  src={tempImage}
+                  alt="icon"
+                />
+                <h3 className={styles.function_item_title}>
+                  Digitales Rechtskataster
+                </h3>
+                <p className={styles.function_item_sub_title}>
+                  o Steuern Sie die Rechtspflichten, Maßnahmen und Verantwortlichkeiten in den Bereichen Energie, Umwelt- und Arbeitsschutz für Ihr gesamtes Unternehmen zuverlässig und sicher mit unserer Software Compleon Solutions (on-demand).
+                </p>
+              </div>
+            </SwiperSlide> */}

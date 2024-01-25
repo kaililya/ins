@@ -13,10 +13,14 @@ function FunctionPage() {
   }, []); 
   
   return (
-    <>
+    <section className={styles2.main_container}>
       <div className={styles2.background}>
-      <p className={styles2.spoiler}>Funktionen</p>
-        <h2 className={`${styles.title} ${styles2.title}`}>Mehr als Excel – software as a service</h2>
+        {/* <p className={styles2.spoiler}>
+          Funktionen
+        </p> */}
+        <h2 className={`${styles.title} ${styles2.title}`}>
+          Mehr als Excel – software as a service
+        </h2>
         <p className={`${styles.sub_title} ${styles2.sub_title}`}>
           Mit Compleon Solutions steuern Sie die Rechtspflichten, Maßnahmen und
           Verantwortlichkeiten in den Bereichen Energie, Umwelt- und
@@ -24,6 +28,21 @@ function FunctionPage() {
           jederzeit und von überall.
         </p>
       </div>
+      <div className={styles2.function_slider_wrapper}>
+        <FunctionSlider />
+      </div>
+      <Input isSubTitle={false} />
+      <Price isSpoiler={false} />
+      <PriceTarif />
+    </section>
+  );
+}
+
+export default FunctionPage;
+
+
+
+
       {/* <ul className={`${styles.function_container} ${styles2.function_container}`}>
         <li className={styles.function_item}>
           <img
@@ -143,14 +162,3 @@ function FunctionPage() {
         </SwiperSlide>
       </Swiper>
       </div> */}
-      <div className={styles2.function_slider_wrapper}>
-        <FunctionSlider />
-      </div>
-      <Input isSubTitle={false} />
-      <Price />
-      <PriceTarif />
-    </>
-  );
-}
-
-export default FunctionPage;

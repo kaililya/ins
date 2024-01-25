@@ -9,7 +9,7 @@ import { BiSolidError } from "react-icons/bi";
 // вернутс к advice_item заданию динаминых падингов
 
 
-function AdvicePage() {
+function AdvicePage({ isSpoiler }) {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -29,7 +29,7 @@ function AdvicePage() {
     <div className={styles.main_container}>
       <div className={styles.wrapper}>
         <div className={styles.background}>
-          <p className={styles.spoiler}>BERATUNG</p>
+        {isSpoiler && (<p className={styles.spoiler}>BERATUNG</p>)}
           <h2 className={styles.title}>
             Pragmatische Beratung, in einer Zeit voller Wandel.
           </h2>

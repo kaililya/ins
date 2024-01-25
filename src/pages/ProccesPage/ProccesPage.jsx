@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./ProccesPage.module.css";
 import { NavLink } from "react-router-dom";
 
-function ProccesPage() {
+function ProccesPage({ isSpoiler }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -10,7 +10,7 @@ function ProccesPage() {
   return (
     <>
       <div className={styles.background}>
-        <p className={styles.spoiler}>Prozess</p>
+      {isSpoiler && (<p className={styles.spoiler}>Prozess</p>)}
         <h2 className={styles.title}>In 4 Schritten rechts­sicher agieren</h2>
         <p className={styles.sub_title}>
           Ihr Unter­nehmen ist so indivi­duell wie die Arbeitswelt. Deshalb

@@ -2,7 +2,7 @@
   padding: 0 16px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-top: calc((100vw - 414px)/(1920 - 414) * (150 - 50) + 50px);
+  padding-top: calc((100vw - 414px)/(1920 - 414) * (174 - 50) + 50px);
   padding-bottom: calc((100vw - 414px)/(1920 - 414) * (118 - 50) + 50px);
 }
 
@@ -15,11 +15,11 @@
   font-family: Mont;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height:  145%;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: 18px;
   /* margin: 0 auto; */
 
 }
@@ -148,7 +148,7 @@
   transition: all .2s ease-out;
   cursor: pointer;
   margin: 0 auto;
-  margin-top: calc((100vw - 414px)/(1920 - 414) * (60 - 50) + 50px);
+  margin-top: 50px;
   text-decoration: none;
 }
 

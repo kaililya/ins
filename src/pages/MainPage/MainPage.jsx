@@ -17,10 +17,10 @@ function MainPage() {
   return (
     <>
       <Hello />
-      <Function /> 
+      <Function isSpoiler={false} /> 
       <Input isSubTitle={true} />
-      <Process />
-      <Price />
+      <Process isSpoiler={false} />
+      <Price isSpoiler={false}/>
       <PriceTarif />
       <News /> 
       <Contact />

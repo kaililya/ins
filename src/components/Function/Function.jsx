@@ -5,10 +5,10 @@ import { funktionenPATH } from "../../utils/constants";
 import { NavLink } from "react-router-dom";
 import FunctionSlider from "../FunctionSlider/FunctionSlider";
 
-function Function() {
+function Function({ isSpoiler }) {
   return (
     <section className={`${styles.main_container}`}>
-      <p className={styles.spoiler}>Funktionen</p>
+      {isSpoiler && (<p className={styles.spoiler}>Funktionen</p>)}
       <h2 className={styles.title}>Mehr als Excel – software as a service</h2>
       <p className={styles.sub_title}>
         Mit Compleon Solutions steuern Sie die Rechtspflichten, Maßnahmen und

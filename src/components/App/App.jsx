@@ -27,8 +27,8 @@ function App() {
       <Routes>
         <Route path={mainPATH} element={<MainPage />} />
         <Route path={funktionenPATH} element={<FunctionPage />}/>
-        <Route path={prozessPATH} element={<ProccesPage />}/>
-        <Route path={beratungPATH} element={<AdvicePage />}/>
+        <Route path={prozessPATH} element={<ProccesPage isSpoiler={false} />}/>
+        <Route path={beratungPATH} element={<AdvicePage isSpoiler={false} />}/>
         <Route path={unternehmenPATH} element={<FirmPage />}/>
         <Route path={faqPATH} element={<FaqPage />}/>
         <Route path={wikiPATH} element={<WikiPage />} />

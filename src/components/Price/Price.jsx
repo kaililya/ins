@@ -3,13 +3,16 @@ import styles from './Price.module.css'
 
 
 
-function Price() {
+function Price({ isSpoiler }) {
 
   return (
     <section className={styles.main_container}>
+      {isSpoiler && (
       <p className={styles.spoiler}>
-        Preise
+       Preise
       </p>
+      )}
+
       <h2 className={styles.title}>
         Jetzt starten.
       </h2>

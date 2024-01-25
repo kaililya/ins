@@ -7,12 +7,15 @@ import 'swiper/css';
 import { NavLink } from "react-router-dom";
 import { prozessPATH } from "../../utils/constants";
 
-function Process() {
+function Process({ isSpoiler }) {
   return (
   <section className={styles.main_container}>
-    <p className={styles.spoiler}>
-      Prozess
-    </p>
+    {isSpoiler && (
+      <p className={styles.spoiler}>
+       Prozess
+      </p>
+    )}
+
     <h2 className={styles.title}>
       In 4 Schritten  rechts­sicher agieren
     </h2>

@@ -1,7 +1,13 @@
+.main_container {
+}
+
 .background {
   background: #79FF91;
   padding-top: 32px;
   padding-bottom: 1px;
+  padding-right: 31px;
+  padding-left: 31px;
+
 }
 
 .title {
@@ -39,12 +45,16 @@
 
 .function_slider_wrapper {
   margin-bottom: 30px;
+  padding: 0 16px;
 }
 
 @media (max-width: 600px) {
 
   .title {
     margin-bottom: 34px;
+  }
+  .function_slider_wrapper {
+    padding: 0;
   }
 
 }
