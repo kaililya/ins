@@ -96,6 +96,7 @@
   color: #EC5E43;
 }
 
+
 .logo_copyright_container {
   display: flex;
   flex-direction: column;
@@ -179,14 +180,29 @@
   white-space: nowrap;
 }
 
-.accordion_label__hidden:hover {
-  color: #EC5E43;
+
+
+
+@media (hover:hover) {
+  .accordion_label__hidden:hover {
+    color: #EC5E43;
+  }
+  
+  .accordion_label:hover {
+    color: #EC5E43;
+  }
 }
 
-.accordion_label:hover {
-  color: #EC5E43;
-}
 
+@media (hover:none) {
+  .accordion_label__hidden:active {
+    color: #EC5E43;
+  }
+  
+  .accordion_label:active {
+    color: #EC5E43;
+  }
+}
 
 .accordion_label::after {
   content: "";
