@@ -45,7 +45,6 @@ function PriceTarif() {
     useSelector((store) => store.swaggerDataReducer.priceData) || [];
 
   const {pathname} = useLocation();
-  console.log(pathname);
 
   
   return (
@@ -148,7 +147,7 @@ function PriceTarif() {
         modules={[Pagination]}
         className={`mySwiper ${styles.wrapper}`}
       >
-        {priceData.map((item,id) => (
+        {priceData.map((item, id) => (
          <SwiperSlide key={item.attributes.id} className={styles.swiper_slide}>
           <div             
             style={{border: id === 1 ? '1px solid #EC5E43' : ''}}
@@ -189,7 +188,6 @@ function PriceTarif() {
                 </>
               )}
             </p>
-            {console.log(item.id)}
             {!item.attributes.ButtonPrice.isExternal ? (
              <a 
                className={id === 1 ? `${styles.button} ${styles.button__special}` : `${styles.button}`}

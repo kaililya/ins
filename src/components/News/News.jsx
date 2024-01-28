@@ -91,8 +91,8 @@ Die Nachrichten konnten nicht heruntergeladen werden. Versuchen Sie, neu zu star
         modules={[Pagination]}
         className={`mySwiper ${styles.wrapper}`}
       >
-        {articlesData.data.map((article) => (
-          <SwiperSlide className={styles.slide}>
+        {articlesData.data.map((article, id) => (
+      <SwiperSlide key={id} className={styles.slide}>
         <article className={styles.new_container}>
          <div className={styles.new_container_text_column}>
            <p className={styles.new_date}>

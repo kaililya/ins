@@ -15,13 +15,11 @@ function SearchPage({ isSubTitle }) {
   const { getLawsRequest, getLawsRequestSuccess, getLawsRequestFailed } = useSelector((store) => store.swaggerDataReducer);
 
   const lawsArray = useSelector((store) => store.swaggerDataReducer.lawsData) || [];
-  console.log(lawsArray);
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
     if (isDerectedToSeachPage) {
-      console.log(prevInput);
       dispatch(fetchLaws(prevInput, 1, 10));
       dispatch(setIsDerectedToSeachPage(false));
     }

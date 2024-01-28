@@ -41,7 +41,7 @@ function AdvicePage({ isSpoiler }) {
           </p>
         </div>
         <h3 className={styles.title_second}>
-          SOFTWARE PLUS BERATUNG - MASSGESCHNEIDERT UND AKKURAT.
+          SOFTWARE PLUS BERATUNG - Individuell UND AKKURAT.
         </h3>
         {/* <span className={`${styles.title_second} ${styles.title_second__no_uper}`}>SS</span> */}
         <p className={styles.sub_title_second}>

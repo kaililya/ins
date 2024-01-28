@@ -35,23 +35,18 @@ function Footer() {
 
   const handelClickTitleCompleon = () => {
     setIsCompleon(prev => !prev);
-    console.log('Compleon ' + `${isCompleon}`);
-
   };
 
   const handelClickTitleService = () => {
     setIsService(prev => !prev);
-    console.log('Service ' + `${isService}`);
   };
 
   const handelClickTitleAktuelles = () => {
     setIsAktuelles(prev => !prev);
-    console.log('Aktuelles ' + `${isAktuelles}`);
   };
 
   const handelClickTitleUberuns = () => {
     setIsUberuns(prev => !prev);
-    console.log('beruns ' + `${isUberuns}`);
   };
 
   const handleDerect = () => {
@@ -59,7 +54,6 @@ function Footer() {
     setIsService(false);
     setIsAktuelles(false);
     setIsUberuns(false);
-    console.log('handleDerect');
   }
 
 

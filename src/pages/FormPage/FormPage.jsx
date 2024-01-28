@@ -20,7 +20,6 @@ function FormPage() {
 
   const hadleSubmit = (e) => {
     e.preventDefault();
-    console.log('value');
     // dispatch(fetchLoginThunk(userData.email,  userData.password));
   };
 

@@ -41,18 +41,15 @@ const Header = () => {
 
   const handelClickTitleSoftware = () => {
     setIsSoftware(prev => !prev);
-    console.log('Software ' + `${isSoftware}`);
 
   };
 
   const handelClickTitleService = () => {
     setIsService(prev => !prev);
-    console.log('Service ' + `${isService}`);
   };
 
   const handelClickTitleAktuelles = () => {
     setIsAktuelles(prev => !prev);
-    console.log('Aktuelles ' + `${isAktuelles}`);
   };
 
   const handleRoute = () => {

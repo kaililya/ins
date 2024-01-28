@@ -6,7 +6,6 @@ export const fetchGetArticlesThunk = () => async(dispatch) => {
   try {
     dispatch(getArticlesRequest());
     const response = await getArticles();
-    // console.log(response);
     dispatch(getArticlesRequestSuccessed(response.data));
   } catch ({ httpCode, message }) {
     const msg = httpCode ? message : 'Не удалось связаться с сервером';
@@ -41,7 +40,6 @@ export const fetchGetPriceThunk = () => async(dispatch) => {
   try {
     dispatch(getPriceRequest());
     const response = await getPrice();
-    // console.log(response.data.data);
     dispatch(getPriceRequestSuccess(response.data.data));
   } catch ({ httpCode, message }) {
     const msg = httpCode ? message : 'Не удалось связаться с сервером';
@@ -53,7 +51,6 @@ export const fetchGetFaqThunk = () => async(dispatch) => {
   try {
     dispatch(getFaqRequest());
     const response = await getFaq();
-    // console.log(response.data.data);
     dispatch(getFaqRequestSuccess(response.data.data));
   } catch ({ httpCode, message }) {
     const msg = httpCode ? message : 'Не удалось связаться с сервером';
@@ -65,7 +62,6 @@ export const fetchGetServiceThunk = () => async(dispatch) => {
   try {
     dispatch(getServiceRequest());
     const response = await getServices();
-    // console.log(response.data.data);
     dispatch(getServiceRequestSuccess(response.data.data));
   } catch ({ httpCode, message }) {
     const msg = httpCode ? message : 'Не удалось связаться с сервером';
@@ -88,7 +84,6 @@ export const fetchLaws = (searchText) => async(dispatch) => {
   try {
     const accessToken = await getAccessToken();
     dispatch(getLawsRequest());
-    console.log(searchText)
     // ${encodeURIComponent(searchText)}
     const response = await axios.get(`${API_BASE_URL}/api/laws?filter[searchText]=${encodeURIComponent(searchText)}`, {
       headers: {
@@ -97,7 +92,6 @@ export const fetchLaws = (searchText) => async(dispatch) => {
       },
     });
     dispatch(getLawsRequestSuccess(response.data));
-    console.log(response.data);
     return response.data;
   } catch (error) {
     dispatch(getLawsRequestFailed('error'));

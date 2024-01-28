@@ -9,7 +9,7 @@ const intitialState = {
   wikiData: null,
   lawsData: [],
   faqData: [],
-  inputValue: null,
+  inputValue: '',
   isDerectedToSeachPage: false,
   getArticlesRequest: false,
   getArticlesRequestSuccess: false,

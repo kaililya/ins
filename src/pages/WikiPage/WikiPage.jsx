@@ -31,8 +31,6 @@ const WikiPage = () => {
     getWikiRequestFailed} =
     useSelector((store) => store.swaggerDataReducer);
 
-  console.log(getWikiRequestFailed, wikiData.length === 0);
-
   if (getWikiRequestFailed) {
     return (<div className={styles.failed_container}>
       <BiSolidError className={styles.error_sign} size={80} />
