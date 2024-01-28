@@ -71,11 +71,12 @@ function AdvicePage({ isSpoiler }) {
             />
           </div>
         )}
-
         <ul className={styles.advice_container}>
           {beratungData.map((advice) => (
             <li key={advice.id} className={styles.advice_item}>
-              <h4 className={styles.advice_title}>{advice.attributes.Title}</h4>
+              <h4 className={styles.advice_title}>
+                {advice.attributes.Title}
+              </h4>
               <div className={styles.figure_direct} />
               <p className={styles.advice_sub_title}>
                 {advice.attributes.Description}
