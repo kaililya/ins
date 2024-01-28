@@ -175,26 +175,16 @@
   }
 
   .second_column_container {
-    /* left: 16%; */
+    left: 17%;
   }
+}
+
+@media (max-width: 413px) {
 
 
-  /* .button_container_item {
-    color: #EC5E43;
-    text-align: center;
-    font-family: Mont;
-    font-size: 16px;
-    font-style: normal;
-    text-transform: uppercase;
-    border-radius: 46px;
-    width: 290px;
-    height: 75px;
-    border: 1px solid #EC5E43;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .2s ease-out;
-  } */
+  .second_column_container {
+    left: 11%;
+  }
 }
 
 @media (max-width: 370px) {
