@@ -56,6 +56,7 @@ const WikiPage = () => {
     )
   }
 
+  console.log(wikiData);
 
   return (
     <section className={styles.wiki}>  
