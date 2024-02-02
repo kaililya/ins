@@ -63,8 +63,7 @@ function PriceTarif() {
             <h3
               className={`${styles.advice_title} ${styles.advice_title__warning}`}
             >
-             Die Tarife konnten nicht geladen werden. Versuchen Sie einen Neustart oder besuchen Sie diese Seite später.
-            </h3>
+              An dieser Stelle wurde noch kein Content generiert. Bei Fragen zum Inhalt wenden Sie sich bitte per Kontaktformular an uns. Vielen Dank.            </h3>
           </div>
         )}
       {getPriceRequest && (

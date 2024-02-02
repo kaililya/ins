@@ -87,7 +87,7 @@ function Input({ isSubTitle }) {
                 <h3
                   className={`${styles.link_major} ${styles.link_major__warning}`}
                 >
-                  Die Suche funktioniert nicht. Versuchen Sie es später erneut
+An dieser Stelle wurde noch kein Content generiert. Bei Fragen zum Inhalt wenden Sie sich bitte per Kontaktformular an uns. Vielen Dank.
                 </h3>
               )}
               {getLawsRequest && (

@@ -3,7 +3,7 @@ import styles from "./Contact.module.css";
 import avatarFirst from "../../image/avatar_1_optimazed.png";
 import avatarSecond from "../../image/avatar_2_optimazed.png";
 
-function Contact() {
+export default function Contact() {
   return (
     <section className={styles.main_container}>
       <p className={styles.spoiler}>Kontakt</p>
@@ -49,9 +49,9 @@ function Contact() {
             Mail schreiben
           </a>
         </li>
+        
       </ul>
     </section>
   );
 }
 
-export default Contact;

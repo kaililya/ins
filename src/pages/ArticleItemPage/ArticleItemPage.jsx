@@ -54,22 +54,9 @@ function ArticleItemPage() {
           <div className={styles.failed_container}>
             <BiSolidError className={styles.error_sign} size={80} />
             <h3 className={`${styles.advice_title} ${styles.advice_title__warning}`}>
-              Der Artikel konnte nicht geladen werden. Versuchen Sie, neu zu starten oder besuchen
-              Sie diese Seite später.
-            </h3>
+            An dieser Stelle wurde noch kein Content generiert. Bei Fragen zum Inhalt wenden Sie sich bitte per Kontaktformular an uns. Vielen Dank.            </h3>
           </div>
         )}
-      {/* {getUniqueArticlesRequest && (
-        <div className={styles.spiner}>
-          <TailSpin
-            color="#292982"
-            radius={'3px'}
-            width={100}
-            height={100}
-            wrapperClass={styles.spiner}
-          />
-        </div>
-      )} */}
       <article className={styles.new_container}>
         <div className={styles.new_container_text_column}>
           <p className={styles.new_date}>

@@ -56,7 +56,7 @@ function AdvicePage({ isSpoiler }) {
               <h3
                 className={`${styles.advice_title} ${styles.advice_title__warning}`}
               >
-                Die BERATUNG konnte nicht geladen werden. Versuchen Sie, neu zu starten oder besuchen Sie diese Seite später.
+                An dieser Stelle wurde noch kein Content generiert. Bei Fragen zum Inhalt wenden Sie sich bitte per Kontaktformular an uns. Vielen Dank.
               </h3>
             </div>
           )}

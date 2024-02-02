@@ -12,5 +12,151 @@
       "className={styles.}"
     ],
     "description": "{styles.}"
+  },
+  "tag p with classname": {
+    "prefix": "sectionclas",
+    "body": [
+      "<section className={styles.}>
+      </section>",
+    ],
+    "description": "tag p with classname"
+  },
+  "tag p with classname": {
+    "prefix": "pclas",
+    "body": [
+      "<p className={styles.}>",
+      "</p>"
+    ],
+    "description": "tag p with classname"
+  },
+  "tag div with classname": {
+    "prefix": "divclas",
+    "body": [
+      "<div className={styles.}>",
+      "</div>"
+    ],
+    "description": "tag div with classname"
+  },
+  "tag h1 with classname": {
+    "prefix": "h1clas",
+    "body": [
+      "<h1 className={styles.}>",
+      "</h1>"
+    ],
+    "description": "tag h1 with classname"
+  },
+  "tag h2 with classname": {
+    "prefix": "h2clas",
+    "body": [
+      "<h2 className={styles.}>",
+      "</h2>"
+    ],
+    "description": "tag h2 with classname"
+  }, 
+  "tag h3 with classname": {
+    "prefix": "h3clas",
+    "body": [
+      "<h3 className={styles.}>",
+      "</h3>"
+    ],
+    "description": "tag h3 with classname"
+  }, 
+  "tag h4 with classname": {
+    "prefix": "h4clas",
+    "body": [
+      "<h4 className={styles.}>",
+      "</h4>"
+    ],
+    "description": "tag h4 with classname"
+  },
+  "tag span with classname": {
+    "prefix": "spanclas",
+    "body": [
+      "<span className={styles.}>",
+      "</span>"
+    ],
+    "description": "tag h4 with classname"
+  }, 
+  "tag img with classname": {
+    "prefix": "imgclas",
+    "body": [
+      "<img className={styles.} src={} />",
+    ],
+    "description": "tag img with classname"
+  },
+  "tag header with classname": {
+    "prefix": "headerclas",
+    "body": [
+      "<header className={styles.}>",
+      "</header>"
+    ],
+    "description": "tag header with classname"
+  },
+  "tag footer with classname": {
+    "prefix": "footerclas",
+    "body": [
+      "<footer className={styles.}>",
+      "</footer>"
+    ],
+    "description": "tag footer with classname"
+  },
+  "tag ul with classname": {
+    "prefix": "ulclas",
+    "body": [
+      "<ul className={styles.}>",
+      "  <li className={styles.}>",
+      "  </li>",
+      "</ul>"
+    ],
+    "description": "tag ul with classname"
+  },
+  "tag li with classname": {
+    "prefix": "liclas",
+    "body": [
+      "<li className={styles.}>",
+      "</li>",
+    ],
+    "description": "tag li with classname"
+  },
+  "get const dispatch": {
+    "prefix": "dispatchsnippet",
+    "body": [
+      "const dispatch = useDispatch();",
+    ],
+    "description": "get const dispatch"
+  },
+  "get const dispatch": {
+    "prefix": "dispatchappsnippet",
+    "body": [
+      "const dispatch = useAppDispatch();",
+    ],
+    "description": "get const dispatch"
+  },
+  "get const selector": {
+    "prefix": "useselectorsnippet",
+    "body": [
+      "const {} = useSelector((store) => store);"
+    ],
+    "description": "get const selector"
+  },
+  {
+    "Import Styles from Module CSS": {
+      "prefix": "readyComponent",
+      "body": [
+        "import React from 'react';",
+        "import styles from './${TM_DIRECTORY}/module.css';",
+
+        "function ${TM_DIRECTORY}() {"
+           "return ("
+           "<div>"
+            "${TM_DIRECTORY}"
+           "</div>);"
+        "}"
+        "export default ${TM_DIRECTORY};"
+      ],
+      "description": "Import styles from module.css"
+    }
   }
+  
+
 }

@@ -81,7 +81,7 @@ function SearchPage({ isSubTitle }) {
           <h3 className={`${styles.link_major}`}>Kein Gesetz gefunden</h3>
         )}
         {getLawsRequestFailed && (
-          <h3 className={`${styles.link_major} ${styles.link_major__warning}`}>Die Suche funktioniert nicht. Versuchen Sie es später erneut</h3>
+          <h3 className={`${styles.link_major} ${styles.link_major__warning}`}>An dieser Stelle wurde noch kein Content generiert. Bei Fragen zum Inhalt wenden Sie sich bitte per Kontaktformular an uns. Vielen Dank.</h3>
         )}
         {!getLawsRequest && (
           <ul className={styles.links_container}>

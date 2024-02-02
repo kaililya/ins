@@ -33,7 +33,7 @@ const ArticlesPage = () => {
       <h3
         className={`${styles.advice_title} ${styles.advice_title__warning}`}
       >
-    Die Nachrichten konnten nicht heruntergeladen werden. Versuchen Sie, neu zu starten oder besuchen Sie diese Seite später.  
+      An dieser Stelle wurde noch kein Content generiert. Bei Fragen zum Inhalt wenden Sie sich bitte per Kontaktformular an uns. Vielen Dank.
       </h3>
     </div>)
   }

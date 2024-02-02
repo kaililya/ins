@@ -37,7 +37,7 @@ const WikiPage = () => {
       <h3
         className={`${styles.advice_title} ${styles.advice_title__warning}`}
       >
-        Das Wiki konnte nicht geladen werden. Versuchen Sie, neu zu starten oder besuchen Sie diese Seite später.
+        Für diesen Artikel wurde noch kein Eintrag generiert. Bei Fragen zum Wiki wenden Sie sich bitte per Kontakformular an uns.
       </h3>
     </div>)
   }
@@ -55,8 +55,6 @@ const WikiPage = () => {
       </div>
     )
   }
-
-  console.log(wikiData);
 
   return (
     <section className={styles.wiki}>  
