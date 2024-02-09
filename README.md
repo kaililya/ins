@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+![Type Script](https://img.shields.io/badge/-TypeScript-000?logo=typescript&logoColor=3178C6&style=flat)![React](https://img.shields.io/badge/-React-000?&logo=React)![Redux Toolkit](https://img.shields.io/badge/-ReduxToolkit-000?logo=Redux&logoColor=764ABC&style=flat)![React Router](https://img.shields.io/badge/-ReactRouter-000?logo=reactrouter&logoColor=CA4245&style=flat)![HTML5](https://img.shields.io/badge/-HTML5-000?&logo=HTML5)![CSS3](https://img.shields.io/badge/-CSS3-000?&logo=CSS3)![GIT](https://img.shields.io/badge/-GIT-000?&logo=GIT)![NPM](https://img.shields.io/badge/-NPM-000?logo=npm&logoColor=CC3534&style=flat)
+# Проект: Compleon Solutions.de
+## [Ссылка на сайт](https://ins-opal.vercel.app/)
+#### О проекте
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+##### SPA юридической компании Compleon Solutions - это многостраничный сайт с адаптивной версткой, на котором можно найти подробную информацию о компании.
 
-In the project directory, you can run:
+В хэдере располагается панель навигации c ссылками для перехода в другие разделы сайта. Основной раздел страницы представлен 2 секциями: список доступных ингредиентов и состав заказа.
 
-### `npm start`
+### Конструктор
+Список доступных ингредиентов разделен на категории, которые соответствуют их типам. В случае, если список не может быть полностью отображен в выделенной для него части интерфейса, сбоку компонента появляется полоса прокрутки. При нажатии на карточку ингридиента открывается модальное окно с крупным изображением и информацией о пищевой ценности. Вкладки в верхней части списка могут позволяют автоматически прокрутить его до нужной категории. Во время ручной прокрутки подсвечивается вкладка, соответствующая просматриваемому разделу.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+В секции состав заказа отображаются все добавленные пользователем позиции. Их добавление происходит по принципу Drag-and-drop при переносе ингредиентов мышью из описанного выше общего списка ингредиентов. В случае отсутствия достаточного места для полного отображения всех включенных в заказ позиций в разделе появляется полоса прокрутки. Первый и последний ингредиент находятся за пределами прокручиваемой области, всегда видны и не могут быть перемещены на другие места. Другие составляющие заказа меняются между собой местами при передвижении их мышкой. В нижней части компонента отображается итоговая стоимость составленного набора. Рядом расположена кнопка оформления заказа. Нажатие на кнопку приводит к открытию модального окна с подтверждением оформления и номером заказа.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Страница профиля и заказы
 
-### `npm test`
+На сайте присуствует страница профиля, на которой авторизированный пользователь может отследить статус готовности всех его заказов и подробное описание каждого заказа, а также поменять персональные данные. Если у пользователя нет аккаунта, то он может легко его создать на странице регистрации. Если пользователь забыл пароль, то он может его восстановить на странице восстановления пароля, при помощи проверочного кода, который пользователь получит на почту указанную при регистрации (есть настоящий back-end).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### Технологии:
+ + Язык программирования ![Type Script](https://img.shields.io/badge/-TypeScript-000?logo=typescript&logoColor=3178C6&style=flat)
+ + В качестве фраймворка используется ![React](https://img.shields.io/badge/-React-000?&logo=React) 
+ + Хранилище данных в браузере разработано при помощи ![Redux Toolkit](https://img.shields.io/badge/-ReduxToolkit-000?logo=Redux&logoColor=764ABC&style=flat)
+ + Навигация на сайте разработанапри помощи ![React Router](https://img.shields.io/badge/-ReactRouter-000?logo=reactrouter&logoColor=CA4245&style=flat)
+ + Запросы на сервер отпралвяются при помощи Axios 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Особенности
+ + Функционал Drag-and-drop реализован с применением библиотеки React DnD.
+ + Автоматическая JWT-авторизация (если пользователь авторизовался, то при повторном посещения сайта ему не нужно заново вводить идентификационные данные).
+ + Адаптивная верстка.
+ + Отсуствие хардкор данных, все приходит с backend.
+ + Клиентский роунтинг, который ограничивает функционал для не авторизованных пользователей.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Начало работы с Create React App
+Проект запускается локально по адресу http://localhost:3000/ путем клонирования данного репозитория и последовательного запуска команд в терминале (должны быть установлены программы Git, NodeJS и менеджер пакетов npm).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### Доступные скрипты
 
-## Learn More
+В каталоге проекта вы можете запустить:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ##### `npm start` - запустить проект,
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- ##### `npm test` - протестировать проект,
 
-### Code Splitting
+- ##### `npm run build` - собрать проект.
+ 
+- ##### `npm test` //для Unit тестирования :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- ##### `npm run cypress` //для E2E тестирования:
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Создает приложение для производства в папке "build".\
+Он правильно связывает React в рабочем режиме и оптимизирует сборку для достижения наилучшей производительности.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
