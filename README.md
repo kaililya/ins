@@ -27,7 +27,7 @@ UI закона меняется в соответсвие есть ли ссы�
  + В качестве фраймворка используется ![React](https://img.shields.io/badge/-React-000?&logo=React) 
  + Хранилище данных в браузере разработано при помощи ![Redux Toolkit](https://img.shields.io/badge/-ReduxToolkit-000?logo=Redux&logoColor=764ABC&style=flat)
  + Навигация на сайте разработанапри помощи ![React Router](https://img.shields.io/badge/-ReactRouter-000?logo=reactrouter&logoColor=CA4245&style=flat)
- + Запросы на сервер отпралвяются при помощи ![Axios]https://img.shields.io/badge/-Axios-000?logo=axios&logoColor=red&style=flat
+ + Запросы на сервер отпралвяются при помощи ![Axios](https://img.shields.io/badge/-Axios-000?logo=axios&logoColor=red&style=flat)
 ---
 
 #### Особенности
